@@ -1,0 +1,106 @@
+.section-projects {
+    // height: 100vh; // for 2 rows
+    height: 150vh; // for 3 rows
+    background-color: rgba($color-primary-bright-orange, .7);
+    position: relative;
+
+    #middle-of-project-page-anchor {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        top: 65vh;
+        left: 0;
+    }
+
+    aside.scroll-content {
+        // float: right;
+        width: 6%;
+        background-color: rgba($color-grey-dark, .05);
+        margin: 2rem 0 2rem 1%;
+        border-radius: 7px;
+        position: absolute;
+        top: 50vh;
+        transform: translateY(-50%);
+        right: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p.scroll-text {
+            font-family: 'M PLUS 1p', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            // font-weight: 400;
+            text-transform: uppercase;
+            color: $color-light;
+            text-align: center;
+            margin: 1.5rem 1% 1rem 1%;
+        }
+
+        img.scroll-img {
+            max-width: 100%;
+            margin: 0 1% 1.5rem 0;
+            // transform: rotate(180deg);
+            animation-name: stretch;
+            animation-duration: 1.5s; 
+            animation-timing-function: ease-out; 
+            animation-delay: 0;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-fill-mode: none;
+            animation-play-state: running;
+        }
+
+        &.down {
+            top: 100vh;
+
+            img.scroll-img {
+                animation-name: stretchRotated;
+                animation-duration: 1.5s; 
+                animation-timing-function: ease-out; 
+                animation-delay: 0;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+                animation-fill-mode: none;
+                animation-play-state: running;
+            }
+        }
+    }
+
+
+    &-wrapper {
+        margin: 7% auto 0 auto;
+        width: 83%;
+        // height: 75%; // for 2 rows
+        height: 85%; // for 3 rows
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    // a.name {
+    //     color: transparent;
+    // }
+}
+
+@keyframes stretch {
+    0% {
+        // transform: scale(.3);
+        transform: translateY(0);
+    }
+    100% {
+        // transform: scale(1.5);
+        transform: translateY(1.5rem);
+    }
+}
+
+@keyframes stretchRotated {
+    0% {
+        transform: rotate(180deg) translateY(1.5rem);
+    }
+    100% {
+        transform: rotate(180deg) translateY(0);
+    }
+}

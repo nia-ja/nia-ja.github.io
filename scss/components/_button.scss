@@ -1,0 +1,70 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.5rem 4rem;
+      display: inline-block;
+      border-radius: 2rem;
+      transition: all 0.2s;
+      position: relative;
+      font-size: 1.6rem;
+  
+      // Change for the <button> element
+      border: none;
+      cursor: pointer;
+    }
+  
+    &:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba($color-dark, 0.2);
+  
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+  
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-0.1rem);
+      box-shadow: 0 0.5rem 1rem rgba($color-dark, 0.2);
+    }
+  
+    &--orange {
+      background-color: $color-primary-bright-orange;
+      color: $color-light;
+  
+      &::after {
+        background-color: $color-primary-bright-orange;
+      }
+    }
+  
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+  
+    &--animated {
+      animation: moveInBottom 0.5s ease-out 0.75s;
+      /* automaticaly apply the styles up to zero percent before the animation starts */
+      animation-fill-mode: backwards;
+    }
+
+    &--contact {
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      background-color: #ff7730;
+      text-transform: none;
+    }
+}

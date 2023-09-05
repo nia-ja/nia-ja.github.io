@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  background-color: black;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  background-color: $color-primary;
+  color: $color-dark;
+  // max-width: 1600px;
+  margin: 0 auto;
+}
+
+main {
+    max-width: inherit;
+}
+
+h1 {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 500;
+  letter-spacing: -3px;
+  line-height: 7rem;
+  font-size: 7.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: $color-dark;
+}
+
+a.name {
+  color: transparent;
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}

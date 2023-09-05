@@ -1,0 +1,22 @@
+.section-skills {
+    height: 100vh;
+    background-color: rgba($color-primary-bright-orange, .2);
+    position: relative;
+
+    .title {
+        color: rgba($color-primary-bright-orange, .2);
+    }
+
+    &-wrapper {
+        margin: 8% auto 0 auto;
+        width: 83%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    // a.name {
+    //     color: transparent;
+    // }
+}
