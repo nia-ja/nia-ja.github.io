@@ -6,6 +6,7 @@ document.cookie = `myCookie=${randomValueHex}`;
 document.cookie = `myCookie=${randomValueHex}; SameSite=None; Secure`;
 
 // Navigation - active tabs
+// todo: change active tabs on scroll
 const nodes = document.getElementsByClassName("navbar_link");
 for (let i = 0; i < nodes.length; i++) {
   nodes[i].addEventListener("click", triggerFunc);

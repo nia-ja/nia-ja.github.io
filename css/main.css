@@ -158,37 +158,37 @@ a.name {
   width: 96%;
 }
 .card_side-main .front-info {
-  height: 80%;
+  height: 88%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px dotted teal;
 }
 .card_side-main .front-info .media {
   width: 45%;
   max-height: 100%;
+  position: relative;
   margin-left: 2%;
-  border: 1px dotted teal;
 }
 .card_side-main .front-info .media img, .card_side-main .front-info .media video {
   max-width: 100%;
   max-height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .card_side-main .front-info .project-text {
   width: 40%;
   margin-right: 2%;
   height: 100%;
   font-family: "Roboto Mono", monospace;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   overflow-y: auto;
-  border: 1px dotted teal;
 }
 .card_side-main .description {
   height: 12%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px dotted teal;
 }
 .card_side-main .description .card_side-tags {
   width: 80%;
@@ -350,25 +350,37 @@ a.name {
   max-width: 40%;
 }
 .card_side-1 .card_side-main .project-text {
-  width: 55%;
-}
-.card_side-1.card_side-back .card_side-main .media {
-  max-width: 35%;
-}
-.card_side-1.card_side-back .card_side-main .project-text {
-  width: 60%;
+  width: 50%;
 }
 .card_side-2 .card_side-main .media {
   max-width: 40%;
 }
 .card_side-2 .card_side-main .project-text {
+  width: 50%;
+}
+.card_side-4 .card_side-main .media {
+  width: 60%;
+}
+.card_side-4 .card_side-main .project-text {
+  width: 30%;
+}
+.card_side-5 .card_side-main .media {
   width: 55%;
 }
-.card_side-4 .card_side-main .media, .card_side-5 .card_side-main .media {
-  width: 65%;
+.card_side-5 .card_side-main .project-text {
+  width: 35%;
 }
-.card_side-4 .card_side-main .project-text, .card_side-5 .card_side-main .project-text {
-  width: 30%;
+.card_side-6 .card_side-main .media {
+  width: 45%;
+}
+.card_side-6 .card_side-main .project-text {
+  width: 45%;
+}
+.card_side-6.card_side-front .card_side-main .media {
+  width: 35%;
+}
+.card_side-6.card_side-front .card_side-main .project-text {
+  width: 55%;
 }
 .card:hover .card_side-front {
   transform: rotateY(-180deg);
