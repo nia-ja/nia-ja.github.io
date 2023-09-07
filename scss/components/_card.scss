@@ -336,4 +336,22 @@
     &:nth-child(3) {
       display: none;
     }
+}
+
+// Media queries
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    // for 6 cards
+    height: 45vh;
+    margin-bottom: 2vh;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
+}
+
+@media (max-width: 640px) {
+  
+}

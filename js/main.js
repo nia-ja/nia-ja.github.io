@@ -87,3 +87,14 @@ if (
     });
     observer.observe(document.querySelector("#middle-of-project-page-anchor"));
 }
+
+// close nav on mobile
+navLinksMobile = document.querySelectorAll(".navigation__link");
+
+checkboxMobile = document.getElementById("navi-toggle");
+
+navLinksMobile.forEach(link => {
+    link.addEventListener("click", () => {
+        checkboxMobile.checked = false;
+    })
+})

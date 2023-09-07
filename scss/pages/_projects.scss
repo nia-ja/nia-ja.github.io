@@ -78,6 +78,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: space-between;
+        // border: 1px solid red;
     }
 
     // a.name {
@@ -103,4 +104,30 @@
     100% {
         transform: rotate(180deg) translateY(0);
     }
+}
+
+// Media queries
+@media (max-width: 768px) {
+    .section-projects{
+        // for 6 cards
+        // height: 295vh;
+        // for 5 cards
+        height: 248vh;
+
+        aside.scroll-content {
+            display: none;
+            visibility: hidden;
+        }
+
+        &-wrapper {
+            max-height: 100%;
+            margin: 5vh auto 0 auto;
+            justify-content: center;
+            align-content: flex-start;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    
 }

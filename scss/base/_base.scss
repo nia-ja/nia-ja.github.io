@@ -14,14 +14,15 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  background-color: $color-primary;
+  background-color: $color-dark;
   color: $color-dark;
-  // max-width: 1600px;
   margin: 0 auto;
 }
 
 main {
-    max-width: inherit;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: $color-primary;
 }
 
 h1 {
@@ -51,17 +52,8 @@ a.name {
   color: transparent;
 }
 
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-}
+// breakpoints for the project
+@media (max-width: 1024px) {}
+@media (max-width: 768px) {}
+@media (max-width: 640px) {}
+@media (orientation: portrait) and (max-width: 640px) {}
