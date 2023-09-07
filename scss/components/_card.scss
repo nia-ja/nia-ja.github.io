@@ -342,7 +342,6 @@
 @media (max-width: 768px) {
   .card {
     width: 100%;
-    // for 6 cards
     height: 45vh;
     margin-bottom: 2vh;
 
@@ -353,5 +352,9 @@
 }
 
 @media (max-width: 640px) {
+  
+}
+
+@media (orientation: portrait) and (max-width: 640px) {
   
 }
