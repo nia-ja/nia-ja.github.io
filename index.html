@@ -33,10 +33,10 @@
         
         <div class="navbar-menu">
             <ul class="navbar_list">
-                <li class="navbar_item"><a href="#" class="navbar_link active"><span>Home</span><div class="dot"></div></a></li>
-                <li class="navbar_item"><a href="#projects" class="navbar_link"><span>Projects</span><div class="dot"></div></a></li>
-                <li class="navbar_item"><a href="#skills" class="navbar_link"><span>Skills</span><div class="dot"></div></a></li>
-                <li class="navbar_item"><a href="#contact" class="navbar_link"><span>Contact</span><div class="dot"></div></a></li>
+                <li class="navbar_item"><a href="#" class="home navbar_link active"><span>Home</span><div class="dot"></div></a></li>
+                <li class="navbar_item"><a href="#projects" class="projects navbar_link"><span>Projects</span><div class="dot"></div></a></li>
+                <li class="navbar_item"><a href="#skills" class="skills navbar_link"><span>Skills</span><div class="dot"></div></a></li>
+                <li class="navbar_item"><a href="#contact" class="contact navbar_link"><span>Contact</span><div class="dot"></div></a></li>
             </ul>
         </div>
     </nav>
@@ -44,7 +44,7 @@
     <!-- main -->
     <main>
         <!-- section about -->
-        <section class="section-about">
+        <section id="home" class="section-about">
             <aside class="about-social">
                 <div class="about-social-wrapper">
                     <a href="https://github.com/nia-ja" target="_blank"><i class="devicon-github-original"></i></a>
@@ -88,11 +88,11 @@
         </section>
 
         <!-- section projects -->
-        <section class="section-projects" id="scroll_to">
-            <a class="name" id="projects">projects</a>
+        <section class="section-projects" id="projects">
+            <a class="name" id="projects-anchor">projects</a>
             <!-- <h3 class="title">Projects:</h3> -->
 
-            <!-- scroll down -->
+            <!-- scroll down/up pointer -->
             <aside class="scroll-content">
                 <p class="scroll-text">More projects</p>
                 <img class="scroll-img" src="/img/arrow-double-down-white.png" alt="double arrow pointing down">
@@ -358,6 +358,9 @@
                                 </ul>
 
                                 <div class="card_side-icons card_side-icons-back">
+                                    <a class="github-link" href="https://kasia.dev/Zoo/" target="_blank">
+                                        <img class="icon-web" src="./img/web.svg" alt="globe icon">
+                                    </a>
                                     <a class="github-link" href="https://github.com/nia-ja/Zoo_Sim" target="_blank">
                                         <i class="devicon-github-original-wordmark colored"></i>
                                     </a>
@@ -507,8 +510,8 @@
         </section>
 
         <!-- section skills -->
-        <section class="section-skills">
-            <a class="name" id="skills"></a>
+        <section class="section-skills" id="skills">
+            <!-- <a class="name" id="skills"></a> -->
             <h3 class="title">Skills:</h3>
 
             <div class="bg-video">
@@ -574,8 +577,8 @@
         </section>
 
         <!-- section contact -->
-        <section class="section-contact">
-            <a class="name" id="contact"></a>
+        <section class="section-contact" id="contact">
+            <!-- <a class="name" id="contact"></a> -->
             <h3 class="title">Contact:</h3>
             <div class="section-contact-main">
                 <div class="cv-wrapper">
