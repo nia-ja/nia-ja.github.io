@@ -1004,6 +1004,7 @@ a.name {
 @media (max-width: 485px) {
   .section-home-wrapper {
     justify-content: space-evenly;
+    padding: 8% 0 6% 0;
   }
   .section-home-heading {
     height: 10%;
