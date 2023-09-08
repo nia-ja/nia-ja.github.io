@@ -221,6 +221,8 @@
 }
 
 // Media queries
+@media (max-width: 1024px) {}
+
 @media (max-width: 768px) {
     .section-home {
         .home-social {
@@ -250,8 +252,9 @@
             }
         }
     }
-
 }
+
+@media (max-width: 565px) {}
 
 @media (max-width: 485px) {
     .section-home {
@@ -292,6 +295,4 @@
     }
 }
 
-@media (orientation: portrait) and (max-width: 640px) {
-
-}
+@media (orientation: portrait) and (max-width: 640px) {}

@@ -31,8 +31,8 @@
         flex-direction: column;
         justify-content: space-between;
         align-content: space-between;
-        margin: 0 2% 2% 2%;
-        height: calc(100% - 4% - 4rem);
+        margin: 0 2% 0 2%;
+        height: calc(100% - 4rem);
         width: 96%;
 
         .front-info {
@@ -67,7 +67,7 @@
             width: 40%;
             // padding-bottom: 7%;
             margin-right: 2%;
-            height: 100%;
+            height: 95%;
             font-family: 'Roboto Mono', monospace;
             font-size: 1.2rem;
             overflow-y: auto;
@@ -78,10 +78,11 @@
         }
 
         .description {
-          height: 12%;
+          height: 16%;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          align-items: center;
           // border: 1px dotted teal;
 
           .card_side-tags {
@@ -187,7 +188,7 @@
                 color: $color-dark;
                 text-decoration: none;
                 display: flex;
-                margin-bottom: 5%;
+                // margin-bottom: 5%;
 
                 &:last-child {
                   margin-left: 5%;
@@ -282,11 +283,11 @@
       &-4 {
         .card_side-main {
           .media {
-            width: 60%;
+            width: 50%;
             // border: 1px solid red;
           }
           .project-text {
-            width: 30%;
+            width: 40%;
             // border: 1px solid red;
           }
         }
@@ -339,6 +340,8 @@
 }
 
 // Media queries
+@media (max-width: 1024px) {}
+
 @media (max-width: 768px) {
   .card {
     width: 100%;
@@ -348,13 +351,76 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    
+    &_side {
+      &-main {
+        .front-info {
+          .project-text {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      &-front {
+        display: none;
+      }
+
+      &-back {
+        transform: rotateY(0);
+      }
+
+      &-6 {
+        .card_side-main {
+          .media {
+            width: 35%;
+          }
+          .project-text {
+            width: 55%;
+          }
+        }
+      }
+    }
+
+    &:hover &_side-front {
+      transform: rotateY(0);
+    }
+
+    &:hover &_side-back {
+      transform: rotateY(0);
+    }
+
   }
 }
 
 @media (max-width: 640px) {
-  
+  .card {
+    &_side {
+      &-main {
+        .front-info {
+          .project-text {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
 
-@media (orientation: portrait) and (max-width: 640px) {
-  
+@media (max-width: 565px) {
+  .card {
+    &_side {
+      &-main {
+        .front-info {
+          .project-text {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
 }
+
+@media (max-width: 485px) {}
+
+@media (orientation: portrait) and (max-width: 640px) {}

@@ -191,8 +191,8 @@ a.name {
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
-  margin: 0 2% 2% 2%;
-  height: calc(96% - 4rem);
+  margin: 0 2% 0 2%;
+  height: calc(100% - 4rem);
   width: 96%;
 }
 .card_side-main .front-info {
@@ -217,16 +217,17 @@ a.name {
 .card_side-main .front-info .project-text {
   width: 40%;
   margin-right: 2%;
-  height: 100%;
+  height: 95%;
   font-family: "Roboto Mono", monospace;
   font-size: 1.2rem;
   overflow-y: auto;
 }
 .card_side-main .description {
-  height: 12%;
+  height: 16%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .card_side-main .description .card_side-tags {
   width: 80%;
@@ -344,7 +345,6 @@ a.name {
   color: #482e2e;
   text-decoration: none;
   display: flex;
-  margin-bottom: 5%;
 }
 .card_side-main .description .card_side-icons-back a.github-link:last-child {
   margin-left: 5%;
@@ -397,10 +397,10 @@ a.name {
   width: 50%;
 }
 .card_side-4 .card_side-main .media {
-  width: 60%;
+  width: 50%;
 }
 .card_side-4 .card_side-main .project-text {
-  width: 30%;
+  width: 40%;
 }
 .card_side-5 .card_side-main .media {
   width: 55%;
@@ -438,6 +438,37 @@ a.name {
   }
   .card:last-child {
     margin-bottom: 0;
+  }
+  .card_side-main .front-info .project-text {
+    font-size: 1.1rem;
+  }
+  .card_side-front {
+    display: none;
+  }
+  .card_side-back {
+    transform: rotateY(0);
+  }
+  .card_side-6 .card_side-main .media {
+    width: 35%;
+  }
+  .card_side-6 .card_side-main .project-text {
+    width: 55%;
+  }
+  .card:hover .card_side-front {
+    transform: rotateY(0);
+  }
+  .card:hover .card_side-back {
+    transform: rotateY(0);
+  }
+}
+@media (max-width: 640px) {
+  .card_side-main .front-info .project-text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 565px) {
+  .card_side-main .front-info .project-text {
+    font-size: 0.9rem;
   }
 }
 .skill {

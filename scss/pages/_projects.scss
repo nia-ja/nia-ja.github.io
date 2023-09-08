@@ -107,6 +107,8 @@
 }
 
 // Media queries
+@media (max-width: 1024px) {}
+
 @media (max-width: 768px) {
     .section-projects{
         // for 6 cards
@@ -128,6 +130,10 @@
     }
 }
 
-@media (max-width: 640px) {
-    
-}
+@media (max-width: 640px) {}
+
+@media (max-width: 565px) {}
+
+@media (max-width: 485px) {}
+
+@media (orientation: portrait) and (max-width: 640px) {}
