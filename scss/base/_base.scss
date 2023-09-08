@@ -53,7 +53,16 @@ a.name {
 }
 
 // breakpoints for the project
-@media (max-width: 1024px) {} // do i need this one?
+@media (max-width: 1024px) {
+  h1 {
+    line-height: 5.5rem;
+    font-size: 6rem;
+  }
+  h2 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+}
 
 @media (max-width: 768px) {
   h1 {
@@ -75,8 +84,32 @@ a.name {
   h2 {
     line-height: 2rem;
     font-size: 1.5rem;
-    // letter-spacing: 0px;
   }
+}
+
+@media (max-width: 565px) {
+  h1 {
+    line-height: 3.5rem;
+    font-size: 3.5rem;
+    letter-spacing: -1px;
+  }
+  // h2 {
+  //   line-height: 2rem;
+  //   font-size: 1.5rem;
+  // }
+}
+
+@media (max-width: 485px) {
+  // h1 {
+  //   line-height: 3.5rem;
+  //   font-size: 3.5rem;
+  //   letter-spacing: -1px;
+  //   // margin-top: 10%;
+  // }
+  // // h2 {
+  // //   line-height: 1.5rem;
+  // //   font-size: 1rem;
+  // // }
 }
 
 @media (orientation: portrait) and (max-width: 640px) {}

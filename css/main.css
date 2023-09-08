@@ -52,6 +52,16 @@ a.name {
   color: transparent;
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    line-height: 5.5rem;
+    font-size: 6rem;
+  }
+  h2 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+}
 @media (max-width: 768px) {
   h1 {
     line-height: 4.5rem;
@@ -71,6 +81,13 @@ a.name {
   h2 {
     line-height: 2rem;
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 565px) {
+  h1 {
+    line-height: 3.5rem;
+    font-size: 3.5rem;
+    letter-spacing: -1px;
   }
 }
 .bg-video {
@@ -914,6 +931,7 @@ a.name {
   margin-top: -5%;
   height: 20%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -981,6 +999,32 @@ a.name {
   }
   .section-home-bottom .arrow-small {
     display: block;
+  }
+}
+@media (max-width: 485px) {
+  .section-home-wrapper {
+    justify-content: space-evenly;
+  }
+  .section-home-heading {
+    height: 10%;
+  }
+  .section-home-main {
+    height: 30%;
+  }
+  .section-home-bottom {
+    height: 20%;
+    flex-wrap: wrap;
+  }
+  .section-home-bottom .arrow {
+    order: 2;
+  }
+  .section-home-bottom .based-in {
+    order: 1;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  .section-home-bottom .name {
+    order: 3;
   }
 }
 .section-contact {
