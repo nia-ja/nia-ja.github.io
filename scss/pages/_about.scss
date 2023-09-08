@@ -175,6 +175,14 @@
         justify-content: space-between;
         align-items: flex-end;
 
+        .arrow-big {
+            display: block;
+        }
+
+        .arrow-small {
+            display: none;
+        }
+
 
         .based-in {
             text-align: left;
@@ -243,6 +251,17 @@
 }
 
 @media (max-width: 640px) {
+    .section-home {
+        &-bottom {
+            .arrow-big {
+                display: none;
+            }
+        
+            .arrow-small {
+                display: block;
+            }
+        }
+    }
 
 }
 

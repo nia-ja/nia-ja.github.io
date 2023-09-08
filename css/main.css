@@ -54,12 +54,23 @@ a.name {
 
 @media (max-width: 768px) {
   h1 {
-    line-height: 5rem;
-    font-size: 5.5rem;
+    line-height: 4.5rem;
+    font-size: 5rem;
   }
   h2 {
     line-height: 2.5rem;
     font-size: 2rem;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    line-height: 4rem;
+    font-size: 4.5rem;
+    letter-spacing: -1px;
+  }
+  h2 {
+    line-height: 2rem;
+    font-size: 1.5rem;
   }
 }
 .bg-video {
@@ -906,6 +917,12 @@ a.name {
   justify-content: space-between;
   align-items: flex-end;
 }
+.section-home-bottom .arrow-big {
+  display: block;
+}
+.section-home-bottom .arrow-small {
+  display: none;
+}
 .section-home-bottom .based-in {
   text-align: left;
   text-transform: uppercase;
@@ -956,6 +973,14 @@ a.name {
   }
   .section-home_photo {
     width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .section-home-bottom .arrow-big {
+    display: none;
+  }
+  .section-home-bottom .arrow-small {
+    display: block;
   }
 }
 .section-contact {
