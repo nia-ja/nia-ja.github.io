@@ -54,6 +54,19 @@ a.name {
 
 // breakpoints for the project
 @media (max-width: 1024px) {} // do i need this one?
-@media (max-width: 768px) {}
+
+@media (max-width: 768px) {
+  h1 {
+    // font-weight: 500;
+    // letter-spacing: -3px;
+    line-height: 5rem;
+    font-size: 5.5rem;
+  }
+  h2 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 640px) {}
 @media (orientation: portrait) and (max-width: 640px) {}

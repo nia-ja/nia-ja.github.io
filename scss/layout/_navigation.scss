@@ -159,12 +159,12 @@
     }
   
     &__button {
-      background-color: $color-light;
+      background-color: $color-primary-bright-orange;
       height: 7rem;
       width: 7rem;
       position: fixed;
-      top: 6rem;
-      right: 6rem;
+      top: 2rem;
+      right: 2rem;
       border-radius: 50%;
       z-index: 2000;
       box-shadow: 0 1rem 3rem rgba(#000, 0.1);
@@ -177,8 +177,8 @@
       width: 6rem;
       border-radius: 50%;
       position: fixed;
-      top: 6.5rem;
-      right: 6.5rem;
+      top: 2.5rem;
+      right: 2.5rem;
       background-image: radial-gradient(
         $color-primary-light-orange,
         $color-primary-bright-orange
@@ -264,8 +264,8 @@
       &::before,
       &::after {
         width: 3rem;
-        height: 2px;
-        background-color: $color-grey-dark-3;
+        height: 3px;
+        background-color: $color-primary;
         display: inline-block;
       }
   

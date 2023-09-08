@@ -1,8 +1,8 @@
-.section-about {
+.section-home {
     height: 100vh;
     position: relative;
 
-    .about-social {
+    .home-social {
         position: absolute;
         top: 20vh;
         right: 0;
@@ -222,4 +222,30 @@
         padding-right: 4rem;
         transform: translateX(-2rem);
     }
+}
+
+// Media queries
+@media (max-width: 768px) {
+    .section-home {
+        .home-social {
+            display: none;
+        }
+
+        &-main {
+            height: 50%;
+        }
+
+        &_photo {
+            width: 100%;
+        } 
+    }
+
+}
+
+@media (max-width: 640px) {
+
+}
+
+@media (orientation: portrait) and (max-width: 640px) {
+
 }
