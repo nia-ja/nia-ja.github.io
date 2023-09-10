@@ -1262,6 +1262,7 @@ a.name {
   text-decoration: none;
   font-size: 6rem;
   color: #fff;
+  margin-bottom: 7%;
 }
 .section-contact-footer .footer-icons-wrapper a:hover {
   color: rgba(255, 255, 255, 0.8);
