@@ -1,5 +1,6 @@
 .section-contact {
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -7,6 +8,7 @@
 
     .title {
         color: $color-primary;
+        // display: none;
     } 
 
     &-main {
@@ -110,6 +112,10 @@
         flex-direction: row;
         justify-content: space-between;
         position: relative;
+
+        .btn-mobile {
+            display: none;
+        }
         
         .footer-contacts {
             &-wrapper {
@@ -218,6 +224,115 @@
             &:hover {
                 transform: translate(-50%, -50%) scale(2);
                 z-index: 100;
+            }
+        }
+    }
+}
+
+/* Media queries */
+@media (max-width: 565px) {
+    .section-contact {
+        .title {
+            display: none;
+        }
+
+        &-main {
+            width: 100%;
+            justify-content: flex-start;
+            margin-top: 0;
+            .cv-wrapper {
+                display: none;
+            }
+            .presentation-wrapper {
+                width: 80%;
+                height: 142%;
+                transform: translate(0, 0);
+
+                .presentation-img-wrapper {
+                    width: 20vh;
+                    height: 20vh;
+                }
+
+                .presentation-big-text {
+                    font-size: 9rem;
+                    line-height: 9rem;
+                }
+
+                .presentation-text {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        &-footer {
+            padding: 14% 4% 1% 4%;
+
+            .footer-contacts-wrapper {
+                height: 80%;
+                align-self: flex-end;
+                h2 {
+                    font-size: 2rem;
+                    margin-top: 10%;
+                    margin-bottom: 1%;
+                }
+
+                .footer-contacts-phone, .footer-contacts-email {
+                    padding-left: 2%;
+                    i.contact-icon {
+                        width: 7%;
+                    }
+                }
+            }
+
+            .footer-icons-wrapper {
+                width: 30%;
+                position: relative;
+
+                .btn-mobile {
+                    display: block;
+                    position: absolute;
+                    top: 65%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+            
+                a {
+                    font-size: 4rem;
+                    margin-bottom: 3%;
+                }
+            }
+
+            a.circle {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .section-contact {
+        &-main {
+            .presentation-wrapper {
+                .presentation-img-wrapper {
+                    float: center;
+                    margin-top: 2rem;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+    
+                .presentation-big-text {
+                    display: none;
+                    text-align: center;
+                    font-size: 9rem;
+                    line-height: 9rem;
+                    transform: rotate(0);
+                }
+    
+                .presentation-text {
+                    text-align: center;
+                }
             }
         }
     }

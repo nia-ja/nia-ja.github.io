@@ -4,7 +4,7 @@
     position: relative;
 
     .title {
-        color: rgba($color-primary-bright-orange, .2);
+        color: transparent;
     }
 
     &-wrapper {
@@ -15,8 +15,4 @@
         flex-direction: column;
         justify-content: space-between;
     }
-
-    // a.name {
-    //     color: transparent;
-    // }
 }

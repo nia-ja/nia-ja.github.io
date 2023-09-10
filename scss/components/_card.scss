@@ -22,8 +22,7 @@
       h2 {
         color: $color-primary-bright-orange;
         text-transform: uppercase;
-        margin: 2% 2% 0 2%;
-        padding-left: 2%;
+        margin: 2% 5%;
       }
 
       &-main {
@@ -31,58 +30,56 @@
         flex-direction: column;
         justify-content: space-between;
         align-content: space-between;
-        margin: 0 2% 0 2%;
-        height: calc(100% - 4rem);
-        width: 96%;
+        margin: 0 5% 0 5%;
+        height: calc(100% - 4% - 4rem);
+        width: 90%;
+        position: relative;
+        // border: 1px solid blue;
 
         .front-info {
-          height: 88%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          // border: 1px dotted teal;
+          width: 100%;
+          height: 80%;
+          overflow: hidden;
+          overflow-y: auto;
+          // overflow: hidden;
+          // display: flex;
+          // flex-direction: row;
+          // justify-content: space-between;
 
           .media {
-            width: 45%;
-            max-height: 100%;
-            position: relative;
-            margin-left: 2%;
-            // border: 1px dotted teal;
-            // overflow: hidden;
+            max-width: 70%;
+            height: 60%;
+            float: left;
+            margin-right: 3%;
+            border: 1px solid blue;
+            // margin: 0 2% 0 2%;
+            overflow: hidden;
+            // position: relative;
 
             img, video {
               max-width: 100%;
               max-height: 100%;
-              position: absolute;
-              top: 50%;
-              transform: translateY(-50%);
+              // position: absolute;
+              // top: 2%;
+              // transform: translateY(-50%);
             }
           }
 
           .project-text {
-            // --mask: linear-gradient(to bottom,
-            //   rgba(0,0,0, 1) 0,rgba(0,0,0, 1) 80%,
-            //   rgba(0,0,0, 0) 95%,rgba(0,0,0, 0) 0
-            // ) 100% 50% / 100% 100% repeat-x;
-            width: 40%;
-            // padding-bottom: 7%;
-            margin-right: 2%;
-            height: 95%;
             font-family: 'Roboto Mono', monospace;
             font-size: 1.2rem;
-            overflow-y: auto;
-            // border: 1px dotted teal;
-            // -webkit-mask: var(--mask); 
-            // mask: var(--mask);
           }
         }
 
         .description {
           height: 16%;
+          width: 100%;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
+          position: absolute;
+          bottom: 0;
           // border: 1px dotted teal;
 
           .card_side-tags {
@@ -95,6 +92,7 @@
             align-content: center;
             list-style-type: none;
             padding-left: 2%;
+            // border: dotted 1px orange;
             
             .tag {
                 margin-right: calc(1% + 0.8rem);
@@ -167,22 +165,24 @@
           .card_side-icons {
             height: 100%;
             width: 18%;
-            margin-right: 2%;
+            // margin-right: 2%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            // border: 1px solid purple;
             
             &-front {
-              align-items: center;
+              // align-items: center;
 
               i.devicon-icon {
-                font-size: calc($default-font-size * 1.5);
+                font-size: calc($default-font-size * 2);
                 margin-right: 5%;
+                // border: 1px solid green;
               }
             }
 
             &-back {
-              align-items: center;
+              // align-items: center;
 
               a.github-link {
                 color: $color-dark;
@@ -197,16 +197,22 @@
                 i.devicon-github-original-wordmark {
                   align-items: center;
                   justify-content: center;
-                  font-size: 2.5rem;
-                  line-height: 2.5rem;
+                  font-size: 3.5rem;
+                  line-height: 3.5rem;
                   color: $color-dark;
+                  // border: 1px solid blue;
                 }
 
                 img {
                   filter: invert(16%) sepia(7%) saturate(2579%) hue-rotate(314deg) brightness(103%) contrast(89%);
                   align-items: center;
                   justify-content: center;
-                  height: 2.5rem;
+                  height: 3.5rem;
+                  // border: 1px solid blue;
+
+                  &.youtube-icon {
+                    height: 4.4rem;
+                  }
                 }
   
                 &:hover {
@@ -220,11 +226,6 @@
                     filter: invert(68%) sepia(41%) saturate(5978%) hue-rotate(6deg) brightness(101%) contrast(95%);
                   }
                 }
-
-                // &:hover + img {
-                //   filter: invert(68%) sepia(41%) saturate(5978%) hue-rotate(6deg) brightness(101%) contrast(95%);
-                // }
-
               }
             }
           }
@@ -247,82 +248,82 @@
         }
       }
 
+      // for particular cards
+      // project#1: LiftQuest
       &-1 {
-        .card_side-main {
-          .media {
-            max-width: 40%;
-          }
-          .project-text {
-            width: 50%;
+        &.card_side-front {
+          .card_side-main .front-info .media {
+            /* 
+              default values: 
+                max-width: 70%;
+                height: 60%;
+            */
+            height: 75%;
           }
         }
-
-        // &.card_side-back {
-        //   .card_side-main {
-        //     .media {
-        //       max-width: 35%;
-        //     }
-        //     .project-text {
-        //       width: 60%;
-        //     }
+        // &.card_side-back {}
+      }
+      // project#2: Lambda Times
+      &-2 {
+        .card_side-main .front-info .media {
+          height: 90%;
+        }
+        // &.card_side-front {
+        //   .card_side-main .front-info .media {
+        //     // height: 80%;
         //   }
         // }
+        // &.card_side-back {}
       }
+      // project#3: hidden
+      // &-3 {
+      //   &.card_side-front {}
+      //   &.card_side-back {}
+      // }
 
-      &-2 {
-        .card_side-main {
-          .media {
-            max-width: 40%;
-          }
-          .project-text {
-            width: 50%;
-          }
-        }
-      }
-      
+      // project#4: Elephant Zoo
       &-4 {
-        .card_side-main {
-          .media {
-            width: 50%;
-            // border: 1px solid red;
-          }
-          .project-text {
-            width: 40%;
-            // border: 1px solid red;
-          }
-        }
-      }
-
-      &-5 {
-        .card_side-main {
-          .media {
-            width: 55%;
-          }
-          .project-text {
-            width: 35%;
-          }
-        }
-      }
-
-      &-6 {
-        .card_side-main {
-          .media {
-            width: 45%;
-          }
-          .project-text {
-            width: 45%;
-          }
+        .card_side-main .front-info .media {
+          height: 56%;
+          max-width: 75%;
         }
         &.card_side-front {
-          .card_side-main {
-            .media {
-              width: 35%;
-            }
-            .project-text {
-              width: 55%;
-            }
+          .card_side-main .front-info .media {
+            height: 54%;
           }
         }
+        // &.card_side-back {}
+      }
+
+      // project#5: Smurf List
+      &-5 {
+        .card_side-main .front-info .media {
+          max-width: 75%;
+          height: 57%;
+        }
+        // &.card_side-front {}
+        // &.card_side-back {}
+      }
+
+      // project#6: S&J
+      &-6 {
+        &.card_side-front {
+          .card_side-main .front-info .media {
+            height: 79%;
+          }
+        }
+        &.card_side-back {
+          .card_side-main .front-info .media {
+            max-width: 60%;
+            height: 58%;
+          }
+        }
+      }
+
+      &-2, &-6.card_side-front {
+          .description {
+            transform: translateY(-10%);
+          }
       }
     }
 
@@ -340,7 +341,32 @@
 }
 
 // Media queries
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+  .card_side {
+    &-main {
+      .front-info {
+          .project-text {
+            font-size: 1.1rem;
+          }
+        }
+    }
+    // project#1: LiftQuest
+    &-1 {
+      &.card_side-back {
+        .card_side-main .front-info .media {
+          height: 50%;
+        }
+      }
+    }
+
+    // project#2: Lambda Times
+    &-2 {
+      .card_side-main .front-info .media {
+        max-width: 60%;
+      }
+    }
+  }
+}
 
 @media (max-width: 768px) {
   .card {
@@ -355,10 +381,17 @@
     
     &_side {
       &-main {
-        .front-info {
-          .project-text {
-            font-size: 1.1rem;
-          }
+        // .front-info {
+        //   .project-text {
+        //     font-size: 1.1rem;
+        //   }
+        // }
+      }
+
+      &-1 {
+        .card_side-main .front-info .media {
+          max-width: 80%;
+          height: 80%;
         }
       }
 
@@ -368,17 +401,6 @@
 
       &-back {
         transform: rotateY(0);
-      }
-
-      &-6 {
-        .card_side-main {
-          .media {
-            width: 35%;
-          }
-          .project-text {
-            width: 55%;
-          }
-        }
       }
     }
 
@@ -393,33 +415,51 @@
   }
 }
 
-@media (max-width: 640px) {
-  .card {
-    &_side {
-      &-main {
-        .front-info {
-          .project-text {
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-  }
-}
+// @media (max-width: 640px) {
+//   .card {
+//     &_side {
+//       &-main {
+//         .front-info {
+//           .project-text {
+//             font-size: 1rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media (max-width: 565px) {
-  .card {
-    &_side {
-      &-main {
-        .front-info {
-          .project-text {
-            font-size: 0.9rem;
-          }
-        }
-      }
-    }
-  }
-}
+// @media (max-width: 565px) {
+//   .card {
+//     &_side {
+//       &-main {
+//         .front-info {
+//           width: 100%;
+//           display: block;
+//           // flex-direction: column;
+//           border: 1px solid red;
+//           .media {
+//             // max-width: 50%;
+//             // height: 50%;
+//             // float: left;
+//             // overflow: hidden;
+//             // border: 1px solid teal;
+//           }
+//           .project-text {
+//             // display: block;
+//             // width: 100%;
+//             // height: 100%;
+//             // float: right;
+//             font-size: 0.9rem;
+//             // overflow-y: auto;
+//             text-align: justify;
+//             // border: 1px solid teal;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media (max-width: 485px) {}
 

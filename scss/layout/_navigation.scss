@@ -163,8 +163,8 @@
       height: 7rem;
       width: 7rem;
       position: fixed;
-      top: 2rem;
-      right: 2rem;
+      top: 2%;
+      right: 2%;
       border-radius: 50%;
       z-index: 2000;
       box-shadow: 0 1rem 3rem rgba(#000, 0.1);
@@ -177,8 +177,8 @@
       width: 6rem;
       border-radius: 50%;
       position: fixed;
-      top: 2.5rem;
-      right: 2.5rem;
+      top: 2.5%;
+      right: 2.5%;
       background-image: radial-gradient(
         $color-primary-light-orange,
         $color-primary-bright-orange
@@ -310,6 +310,12 @@
 }
 
 // Media queries
+@media (max-width: 1024px) {
+    .navbar {
+        max-width: 1024px;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         display: none;

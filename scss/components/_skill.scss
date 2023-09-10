@@ -22,10 +22,10 @@
     }
 
     &-list {
-        width: 58%;
+        width: 80%;
         height: 100%;
         margin-left: 0;
-        margin-right: 20%;
+        margin-right: 5%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -40,18 +40,16 @@
             font-family: 'Roboto Mono', monospace;
             color: $color-dark;
             font-size: 2.2rem;
-            // border: 1px solid blue;
             display: flex;
             align-items: baseline;
 
             i {
                 margin-right: .5rem;
                 color: inherit;
-                // border: 1px solid red;
             }
 
             img.icon {
-                max-height: calc($default-font-size * 1.5);
+                height: 2.2rem;
                 margin-right: .5rem;
                 color: inherit;
                 filter: invert(16%) sepia(5%) saturate(3700%) hue-rotate(314deg) brightness(101%) contrast(89%);
@@ -86,12 +84,7 @@
         .skill-list {
             transform: skewX(-12deg);
             margin-right: 0;
-            margin-left: 22%;
-
-            // &-item {
-            //     margin-right: 0;
-            //     margin-left: 10px;
-            // }
+            margin-left: 5%;
         }
     }
 
@@ -124,5 +117,61 @@
     &:last-child:hover {
         transform: translateX(2%);
     }
+}
 
+/* Media queries*/
+@media (max-width: 1024px) {
+    .skill {
+        &-list {
+            &-item {
+                font-size: 2rem;
+
+                img.icon {
+                    height: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .skill {
+        &-list {
+            &-item {
+                font-size: 1.8rem;
+
+                img.icon {
+                    height: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .skill {
+        &-list {
+            &-item {
+                font-size: 1.6rem;
+
+                img.icon {
+                    height: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 565px) {
+    .skill {
+        &-list {
+            &-item {
+                font-size: 1.4rem;
+
+                img.icon {
+                    height: 1.4rem;
+                }
+            }
+        }
+    }
 }

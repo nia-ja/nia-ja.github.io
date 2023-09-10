@@ -107,19 +107,26 @@
 }
 
 // Media queries
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    .section-projects {
+        aside.scroll-content {
+        display: none;
+        visibility: hidden;
+        }
+    }
+}
 
 @media (max-width: 768px) {
-    .section-projects{
+    .section-projects {
         // for 6 cards
         // height: 295vh;
         // for 5 cards
         height: 248vh;
 
-        aside.scroll-content {
-            display: none;
-            visibility: hidden;
-        }
+        // aside.scroll-content {
+        //     display: none;
+        //     visibility: hidden;
+        // }
 
         &-wrapper {
             max-height: 100%;

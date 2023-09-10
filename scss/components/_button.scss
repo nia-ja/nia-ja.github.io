@@ -41,6 +41,17 @@
         background-color: $color-primary-bright-orange;
       }
     }
+
+    &--white {
+      background-color: $color-light;
+      color: $color-primary-bright-orange;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+  
+      &::after {
+        background-color: $color-light;
+      }
+    }
   
     &::after {
       content: "";
