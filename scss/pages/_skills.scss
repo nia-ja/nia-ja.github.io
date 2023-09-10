@@ -16,3 +16,12 @@
         justify-content: space-between;
     }
 }
+
+@media (max-width: 640px) {
+    .section-skills {
+        &-wrapper {
+            margin-top: 25%;
+            width: 90%;
+        }
+    }
+}
