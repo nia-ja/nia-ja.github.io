@@ -1470,7 +1470,7 @@ a.name {
 }
 @media (max-width: 375px) {
   .section-contact-main .presentation-wrapper .presentation-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .section-contact-footer .footer-contacts-wrapper h2 {
     margin-bottom: 7%;
