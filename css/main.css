@@ -94,7 +94,8 @@ a.name {
     letter-spacing: -1px;
   }
 }
-/* 485 */
+/* 475 */
+/* 375 */
 .bg-video {
   position: absolute;
   top: 0;
@@ -1343,24 +1344,27 @@ a.name {
     font-size: 1.4rem;
   }
   .section-contact-footer {
-    padding: 5% 4% 1% 4%;
+    padding: 5% 4% 1% 8%;
     align-items: center;
   }
   .section-contact-footer .footer-contacts-wrapper {
     height: 60%;
+    width: 60%;
     margin-bottom: 0;
     justify-content: flex-start;
   }
   .section-contact-footer .footer-contacts-wrapper h2 {
     font-size: 2rem;
-    margin-bottom: 4%;
+    margin-bottom: 5%;
   }
   .section-contact-footer .footer-contacts-wrapper .footer-contacts-phone, .section-contact-footer .footer-contacts-wrapper .footer-contacts-email {
     padding-left: 2%;
-    margin-bottom: 3%;
   }
   .section-contact-footer .footer-contacts-wrapper .footer-contacts-phone i.contact-icon, .section-contact-footer .footer-contacts-wrapper .footer-contacts-email i.contact-icon {
     width: 7%;
+  }
+  .section-contact-footer .footer-contacts-wrapper .footer-contacts-email {
+    margin-bottom: 4%;
   }
   .section-contact-footer .footer-icons-wrapper {
     width: 30%;
@@ -1403,7 +1407,7 @@ a.name {
     font-size: 1rem;
   }
   .section-contact-footer {
-    padding: 10% 4% 5% 4%;
+    padding: 3% 4% 1% 8%;
   }
   .section-contact-footer .footer-contacts-wrapper {
     font-size: 1.1rem;

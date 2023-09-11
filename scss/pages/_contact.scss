@@ -269,26 +269,31 @@
         }
 
         &-footer {
-            padding: 5% 4% 1% 4%;
+            padding: 5% 4% 1% 8%;
             align-items: center;
+            // border: 1px dashed teal;
+
 
             .footer-contacts-wrapper {
                 // border: 1px dashed teal;
                 height: 60%;
+                width: 60%;
                 margin-bottom: 0;
                 justify-content: flex-start;
                 h2 {
                     font-size: 2rem;
                     // margin-top: 10%;
-                    margin-bottom: 4%;
+                    margin-bottom: 5%;
                 }
 
                 .footer-contacts-phone, .footer-contacts-email {
                     padding-left: 2%;
-                    margin-bottom: 3%;
                     i.contact-icon {
                         width: 7%;
                     }
+                }
+                .footer-contacts-email {
+                    margin-bottom: 4%;
                 }
             }
 
@@ -347,8 +352,7 @@
         }
 
         &-footer {
-            padding: 10% 4% 5% 4%;
-
+            padding: 3% 4% 1% 8%;
             .footer-contacts {
                 
                 &-wrapper {
