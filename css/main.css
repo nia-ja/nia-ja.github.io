@@ -1379,7 +1379,6 @@ a.name {
   }
   .section-contact-footer .footer-icons-wrapper a {
     font-size: 4rem;
-    align-self: flex-start;
   }
   .section-contact-footer a.circle {
     display: none;
@@ -1409,8 +1408,14 @@ a.name {
   .section-contact-footer .footer-contacts-wrapper {
     font-size: 1.1rem;
   }
+  .section-contact-footer .footer-icons-wrapper {
+    padding-bottom: 12%;
+  }
   .section-contact-footer .footer-icons-wrapper .btn-mobile {
     font-size: 1.1rem;
+  }
+  .section-contact-footer .footer-icons-wrapper a {
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 375px) {
@@ -1418,16 +1423,11 @@ a.name {
     padding-bottom: 30%;
   }
   .section-contact-footer .footer-icons-wrapper .btn-mobile {
-    display: block;
-    width: 80%;
-    position: static;
     padding: 1rem 1.5rem;
     font-size: 1rem;
-    font-weight: bold;
   }
   .section-contact-footer .footer-icons-wrapper a {
     font-size: 3rem;
-    align-self: flex-start;
   }
 }
 .section-projects {

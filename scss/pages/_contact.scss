@@ -300,7 +300,6 @@
                 margin-bottom: 0;
                 justify-content: space-around;
                 align-items: flex-start;
-                // flex-direction: column;
 
                 .btn-mobile {
                     display: block;
@@ -312,7 +311,6 @@
             
                 a {
                     font-size: 4rem;
-                    align-self: flex-start;
                 }
             }
 
@@ -329,6 +327,7 @@
             .presentation-wrapper {
                 height: 125%;
                 width: 83%;
+
                 .presentation-img-wrapper {
                     float: center;
                     margin-top: 2rem;
@@ -358,9 +357,15 @@
             }
 
             .footer-icons-wrapper {
+                padding-bottom: 12%;
+
                 .btn-mobile {
                     font-size: 1.1rem;
-                }  
+                }
+
+                a {
+                    font-size: 3.5rem;
+                }
             }
         }
     }
@@ -373,17 +378,12 @@
                 padding-bottom: 30%;
 
                 .btn-mobile {
-                    display: block;
-                    width: 80%;
-                    position: static;
                     padding: 1rem 1.5rem;
                     font-size: 1rem;
-                    font-weight: bold;
                 }
 
                 a {
                     font-size: 3rem;
-                    align-self: flex-start;
                 }
             }
         }
