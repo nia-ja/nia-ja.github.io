@@ -1327,8 +1327,8 @@ a.name {
     display: none;
   }
   .section-contact-main .presentation-wrapper {
-    width: 80%;
-    height: 142%;
+    width: 83%;
+    height: 125%;
     transform: translate(0, 0);
   }
   .section-contact-main .presentation-wrapper .presentation-img-wrapper {
@@ -1343,19 +1343,21 @@ a.name {
     font-size: 1.4rem;
   }
   .section-contact-footer {
-    padding: 14% 4% 1% 4%;
+    padding: 5% 4% 1% 4%;
+    align-items: center;
   }
   .section-contact-footer .footer-contacts-wrapper {
-    height: 80%;
-    align-self: flex-end;
+    height: 60%;
+    margin-bottom: 0;
+    justify-content: flex-start;
   }
   .section-contact-footer .footer-contacts-wrapper h2 {
     font-size: 2rem;
-    margin-top: 10%;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
   }
   .section-contact-footer .footer-contacts-wrapper .footer-contacts-phone, .section-contact-footer .footer-contacts-wrapper .footer-contacts-email {
     padding-left: 2%;
+    margin-bottom: 3%;
   }
   .section-contact-footer .footer-contacts-wrapper .footer-contacts-phone i.contact-icon, .section-contact-footer .footer-contacts-wrapper .footer-contacts-email i.contact-icon {
     width: 7%;
@@ -1363,22 +1365,31 @@ a.name {
   .section-contact-footer .footer-icons-wrapper {
     width: 30%;
     height: 60%;
+    padding-bottom: 20%;
+    margin-bottom: 0;
+    justify-content: space-around;
+    align-items: flex-start;
   }
   .section-contact-footer .footer-icons-wrapper .btn-mobile {
     display: block;
-    width: 100%;
+    width: 80%;
     position: static;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
   }
   .section-contact-footer .footer-icons-wrapper a {
     font-size: 4rem;
+    align-self: flex-start;
   }
   .section-contact-footer a.circle {
     display: none;
   }
 }
 @media (max-width: 475px) {
+  .section-contact-main .presentation-wrapper {
+    height: 125%;
+    width: 83%;
+  }
   .section-contact-main .presentation-wrapper .presentation-img-wrapper {
     float: center;
     margin-top: 2rem;
@@ -1397,6 +1408,26 @@ a.name {
   }
   .section-contact-footer .footer-contacts-wrapper {
     font-size: 1.1rem;
+  }
+  .section-contact-footer .footer-icons-wrapper .btn-mobile {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 375px) {
+  .section-contact-footer .footer-icons-wrapper {
+    padding-bottom: 30%;
+  }
+  .section-contact-footer .footer-icons-wrapper .btn-mobile {
+    display: block;
+    width: 80%;
+    position: static;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .section-contact-footer .footer-icons-wrapper a {
+    font-size: 3rem;
+    align-self: flex-start;
   }
 }
 .section-projects {
