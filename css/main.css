@@ -870,6 +870,23 @@ a.name {
     display: block;
   }
 }
+@media (max-width: 485px) {
+  .navigation__button {
+    height: 5rem;
+    width: 5rem;
+  }
+  .navigation__background {
+    height: 4rem;
+    width: 4rem;
+  }
+  .navigation__icon {
+    margin-top: calc(2.5rem - 1px);
+  }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 2.8rem;
+    height: 2.5px;
+  }
+}
 .section-home {
   height: 100vh;
   position: relative;
@@ -1193,6 +1210,7 @@ a.name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
   position: relative;
 }
 .section-contact-footer .btn-mobile {
@@ -1252,17 +1270,18 @@ a.name {
 }
 .section-contact-footer .footer-icons-wrapper {
   width: 25%;
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 7%;
 }
 .section-contact-footer .footer-icons-wrapper a {
   text-decoration: none;
   font-size: 6rem;
   color: #fff;
-  margin-bottom: 7%;
 }
 .section-contact-footer .footer-icons-wrapper a:hover {
   color: rgba(255, 255, 255, 0.8);
@@ -1343,20 +1362,17 @@ a.name {
   }
   .section-contact-footer .footer-icons-wrapper {
     width: 30%;
-    position: relative;
+    height: 60%;
   }
   .section-contact-footer .footer-icons-wrapper .btn-mobile {
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    position: static;
     font-size: 1.6rem;
     font-weight: bold;
   }
   .section-contact-footer .footer-icons-wrapper a {
     font-size: 4rem;
-    margin-bottom: 3%;
   }
   .section-contact-footer a.circle {
     display: none;
@@ -1374,7 +1390,13 @@ a.name {
   }
   .section-contact-main .presentation-wrapper .presentation-text {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .section-contact-footer {
+    padding: 10% 4% 5% 4%;
+  }
+  .section-contact-footer .footer-contacts-wrapper {
+    font-size: 1.1rem;
   }
 }
 .section-projects {

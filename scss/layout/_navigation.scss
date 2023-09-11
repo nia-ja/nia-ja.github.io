@@ -331,6 +331,36 @@
 
 }
 
+@media (max-width: 565px) {}
+
+@media (max-width: 485px) {
+    .navigation {
+        &__button {
+            height: 5rem;
+            width: 5rem;
+            // top: 2%;
+            // right: 2%;
+        }
+    
+        &__background {
+        height: 4rem;
+        width: 4rem;
+        }
+
+        &__icon {
+            margin-top: calc(2.5rem - 1px);
+        
+            &,
+            &::before,
+            &::after {
+              width: 2.8rem;
+              height: 2.5px;
+              
+            }
+        }
+    }
+}
+
 @media (orientation: portrait) and (max-width: 640px) {
 
 }
