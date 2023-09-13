@@ -1,16 +1,16 @@
 /* Navigation desktop */
 .navbar {
+    width: 100%;
     max-width: 1600px;
     height: 10%;
-    margin: 0 auto;
     position: fixed;
+    top: 0;
+    left: auto;
+    right: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // makes flexbox work with fixed position
-    top: 0;
-    left: 0;
-    right: 0;
+    
     padding: 2rem 3%;
     z-index: 100;
     background-color: rgba($color-primary, .2);
@@ -311,9 +311,9 @@
 
 // Media queries
 @media (max-width: 1024px) {
-    .navbar {
-        max-width: 1024px;
-    }
+    // .navbar {
+    //     max-width: 1024px;
+    // }
 }
 
 @media (max-width: 768px) {

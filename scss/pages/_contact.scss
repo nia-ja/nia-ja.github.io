@@ -8,7 +8,6 @@
 
     .title {
         color: $color-primary;
-        // display: none;
     } 
 
     &-main {
@@ -18,7 +17,6 @@
         display: flex;
         justify-content: space-between;
         // align-items: space-between;
-        // border: 1px solid red;
 
         .cv-wrapper { 
             width: 50%;
@@ -193,7 +191,6 @@
                 text-decoration: none;
                 font-size: 6rem;
                 color: $color-light;
-                // margin-bottom: 7%;
 
                 &:hover {
                     color: rgba($color-light, 0.8);
@@ -237,13 +234,11 @@
 @media (max-width: 768px) {
     .section-contact {
         &-main {
-            // border: 1px solid red;
             margin: 7% auto 3% auto;
             width: 94%;
 
             .cv-wrapper {
                 width: 45%;
-                // border: 1px dashed black;
 
                 iframe {
                     transform: translateY(-10%);
@@ -259,7 +254,6 @@
             .presentation-wrapper {
                 width: 55%;
                 height: 140%;
-                // border: 1px dashed black;
 
                 .presentation-img-wrapper {
                     width: 30vh;
@@ -271,19 +265,16 @@
                     display: none;
                     font-size: 9rem;
                     line-height: 9rem;
-                    // text-align: right;
                 }
             }
 
         }
         &-footer {
-            // border: 1px solid blue;
             // height: 30%;
             padding: 1% 4% 1% 8%;
             align-items: center;
 
             .footer-contacts-wrapper {
-                // border: 1px solid blue;
                 width: 45%;
                 height: 60%;
                 justify-content: flex-start;
@@ -296,9 +287,9 @@
                 .footer-contacts-email,
                 .footer-contacts-phone {
                     padding-left: 2%;
+
                     i.contact-icon {
                         width: 8%;
-                        // border: 1px solid blue;
                     }
                 }
 
@@ -309,7 +300,6 @@
 
             .footer-icons-wrapper {
                 width: 50%;
-                // border: 1px solid blue;
                 height: 95%;
                 margin-bottom: 0;
                 justify-content: flex-end;
@@ -339,9 +329,11 @@
             width: 100%;
             justify-content: flex-start;
             margin-top: 0;
+
             .cv-wrapper {
                 display: none;
             }
+
             .presentation-wrapper {
                 width: 83%;
                 height: 125%;
@@ -366,11 +358,8 @@
         &-footer {
             padding: 15% 4% 1% 8%;
             align-items: flex-start;
-            // border: 1px dashed teal;
-
 
             .footer-contacts-wrapper {
-                // border: 1px dashed teal;
                 // height: 60%;
                 width: 60%;
                 // margin-bottom: 0;
@@ -381,21 +370,9 @@
                     // margin-top: 10%;
                     // margin-bottom: 5%;
                 }
-
-                // .footer-contacts-phone, .footer-contacts-email {
-                //     padding-left: 2%;
-
-                //     i.contact-icon {
-                //         width: 7%;
-                //     }
-                // }
-                // .footer-contacts-email {
-                //     margin-bottom: 4%;
-                // }
             }
 
             .footer-icons-wrapper {
-                // border: 1px dashed teal;
                 width: 30%;
                 height: 40%;
                 // padding-bottom: 20%;
@@ -486,14 +463,14 @@
                 h2 {
                     margin-bottom: 7%;
                 }
+
                 .footer-contacts-phone, .footer-contacts-email {
-                        padding-left: 5%;
-    
-                        i.contact-icon {
-                            width: 10%;
-                            // border: 1px solid green;
-                        }
+                    padding-left: 5%;
+
+                    i.contact-icon {
+                        width: 10%;
                     }
+                }
                     
             }
 
