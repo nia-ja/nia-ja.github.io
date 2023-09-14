@@ -1,6 +1,6 @@
 .section-contact {
     height: 100vh;
-    width: 100vw;
+    // width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,7 +23,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             overflow: hidden;
             background-color: rgba($color-light, 0.3);
@@ -33,11 +33,14 @@
                 // rgba(0,0,0, 1) 0,rgba(0,0,0, 1) 80%,
                 // rgba(0,0,0, 0) 94%,rgba(0,0,0, 0) 0
                 // ) 100% 50% / 100% 100% repeat-x;
-                width: 100%;
-                height: 85%;
+                // width: 100%;
+                // height: 85%;
                 border: none;
                 margin: 0;
                 padding: 0;
+                transform: translateY(-10%);
+                width: 110%;
+                height: 100%;
                 // transform: translateY(-10%);
                 // -webkit-mask: var(--mask); 
                 // mask: var(--mask);
@@ -46,7 +49,7 @@
             .btn {
                 height: auto;
                 width: 30%;
-                margin-bottom: 3%;
+                margin-bottom: 1%;
                 a {
                     text-decoration: none;
                     color: $color-light;
@@ -67,9 +70,10 @@
 
 
                 .presentation-img-wrapper {
-                    float: left;
-                    margin-right: 2rem;
-                    margin-bottom: 2rem;
+                    // float: left;
+                    margin: 0 auto;
+                    // margin-right: 2rem;
+                    margin-bottom: 4rem;
                     width: 30vh;
                     height: 30vh;
                     overflow: hidden;
@@ -81,21 +85,22 @@
                     transform: rotate(-10deg) scale(1.4) translate(-7%, 14%);
                 }
 
-                .presentation-big-text {
-                    text-align: center;
-                    font-family: 'Sriracha', cursive;
-                    font-size: 12rem;
-                    line-height: 12rem;
-                    color: $color-primary-light-orange;
-                    margin-bottom: 1rem;
-                    transform: rotate(-3deg);
-                }
+                // .presentation-big-text {
+                //     display: none;
+                //     text-align: right;
+                //     font-family: 'Sriracha', cursive;
+                //     font-size: 12rem;
+                //     line-height: 12rem;
+                //     color: $color-primary-light-orange;
+                //     // margin-bottom: 1rem;
+                //     transform: rotate(-3deg) translateY(-15%);
+                // }
 
                 .presentation-text {
                     margin-bottom: 5%;
                     color: $color-light;
                     font-family: 'Roboto Mono', monospace;
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -231,6 +236,65 @@
 }
 
 /* Media queries */
+@media (max-width: 1440px) {
+    .section-contact {
+        &-main {
+            .presentation-wrapper{
+                .presentation-img-wrapper {
+                    float: left;
+                    margin: 0 5% 5% 0;
+                }
+
+                .presentation-text {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    .section-contact {
+        &-main {
+            .presentation-wrapper{
+                .presentation-text {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-contact {
+        &-main {
+            .presentation-wrapper{
+                .presentation-img-wrapper {
+                    width: 25vh;
+                    height: 25vh;
+                }
+
+                .presentation-text {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .section-contact {
+        &-main {
+            .presentation-wrapper{
+                .presentation-img-wrapper {
+                    width: 20vh;
+                    height: 20vh;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .section-contact {
         &-main {
@@ -256,15 +320,14 @@
                 height: 140%;
 
                 .presentation-img-wrapper {
-                    width: 30vh;
-                    height: 30vh;
-                    margin-bottom: 4rem;
+                    width: 25vh;
+                    height: 25vh;
+
+                    margin-bottom: 2rem;
                 }
 
-                .presentation-big-text {
-                    display: none;
-                    font-size: 9rem;
-                    line-height: 9rem;
+                .presentation-text {
+                    font-size: 1.1rem;
                 }
             }
 
@@ -319,6 +382,23 @@
     }
 }
 
+@media (max-width: 640px) {
+    .section-contact {
+        &-main {
+            .presentation-wrapper{
+                .presentation-img-wrapper {
+                    width: 20vh;
+                    height: 20vh;
+                }
+
+                // .presentation-text {
+                //     font-size: 1.2rem;
+                // }
+            }
+        }
+    }
+}
+
 @media (max-width: 565px) {
     .section-contact {
         .title {
@@ -340,8 +420,8 @@
                 transform: translate(0, 0);
 
                 .presentation-img-wrapper {
-                    width: 20vh;
-                    height: 20vh;
+                    width: 25vh;
+                    height: 25vh;
                 }
 
                 .presentation-big-text {
@@ -350,7 +430,7 @@
                 }
 
                 .presentation-text {
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -489,3 +569,5 @@
         }
     }
 }
+
+@media (orientation: portrait) and (max-width: 640px) {}
