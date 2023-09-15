@@ -1188,6 +1188,7 @@ a.name {
   height: 30vh;
   overflow: hidden;
   border-radius: 50%;
+  transform: translateZ(0);
 }
 .section-contact-main .presentation-wrapper .presentation-img {
   width: 100%;
