@@ -322,7 +322,8 @@
                 .presentation-img-wrapper {
                     width: 25vh;
                     height: 25vh;
-
+                    // float: center;
+                    // margin: 0 auto;
                     margin-bottom: 2rem;
                 }
 
@@ -420,18 +421,18 @@
                 transform: translate(0, 0);
 
                 .presentation-img-wrapper {
-                    width: 25vh;
-                    height: 25vh;
+                    // width: 25vh;
+                    // height: 25vh;
                 }
 
-                .presentation-big-text {
-                    font-size: 9rem;
-                    line-height: 9rem;
-                }
+                // .presentation-big-text {
+                //     font-size: 9rem;
+                //     line-height: 9rem;
+                // }
 
-                .presentation-text {
-                    font-size: 1.2rem;
-                }
+                // .presentation-text {
+                //     font-size: 1.2rem;
+                // }
             }
         }
 
@@ -486,23 +487,19 @@
     .section-contact {
         &-main {
             .presentation-wrapper {
-                height: 125%;
+                height: 127%;
                 width: 83%;
 
                 .presentation-img-wrapper {
-                    float: center;
-                    margin-top: 2rem;
-                    margin-left: 50%;
-                    transform: translateX(-50%);
-                }
-    
-                .presentation-big-text {
-                    display: none;
+                    // float: center;
+                    // margin-top: 2rem;
+                    // margin-left: 50%;
+                    // transform: translateX(-50%);
                 }
     
                 .presentation-text {
-                    text-align: center;
-                    font-size: 1rem;
+                    // text-align: center;
+                    // font-size: 1rem;
                 }
             }
         }

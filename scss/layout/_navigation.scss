@@ -334,31 +334,59 @@
 @media (max-width: 565px) {}
 
 @media (max-width: 485px) {
-    .navigation {
-        &__button {
-            height: 5rem;
-            width: 5rem;
-            // top: 2%;
-            // right: 2%;
-        }
-    
-        &__background {
+  .navigation {
+      &__button {
+          height: 5rem;
+          width: 5rem;
+          // top: 2%;
+          // right: 2%;
+      }
+  
+      &__background {
+      height: 4rem;
+      width: 4rem;
+      }
+
+      &__icon {
+          margin-top: calc(2.5rem - 1px);
+      
+          &,
+          &::before,
+          &::after {
+            width: 2.8rem;
+            height: 2.5px;
+            
+          }
+      }
+  }
+}
+
+@media (max-width: 375px) {
+  .navigation {
+    &__button {
         height: 4rem;
         width: 4rem;
-        }
+        // top: 2%;
+        // right: 2%;
+    }
 
-        &__icon {
-            margin-top: calc(2.5rem - 1px);
-        
-            &,
-            &::before,
-            &::after {
-              width: 2.8rem;
-              height: 2.5px;
-              
-            }
+    &__background {
+    height: 3rem;
+    width: 3rem;
+    }
+
+    &__icon {
+        margin-top: calc(2rem - 1px);
+    
+        &,
+        &::before,
+        &::after {
+          width: 2rem;
+          height: 1.5px;
+          
         }
     }
+}
 }
 
 @media (orientation: portrait) and (max-width: 640px) {
