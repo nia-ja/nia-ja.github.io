@@ -177,8 +177,9 @@ a.name {
 }
 
 .card {
-  perspective: 150rem;
   -moz-perspective: 150rem;
+  -webkit-perspective: 150rem;
+  perspective: 150rem;
   width: 49%;
   height: 32%;
 }
@@ -190,6 +191,7 @@ a.name {
   left: 0;
   width: 100%;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   display: flex;
@@ -383,14 +385,16 @@ a.name {
 .card_side-front {
   height: 100%;
   background-color: #fff;
+  z-index: 100;
 }
 .card_side-back {
   height: 100%;
   background-color: #fff;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateZ(1px);
 }
-.card_side-back iframe {
+.card_side-back iframe, .card_side-back video {
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .card_side-1.card_side-front .card_side-main .front-info .media {
@@ -1158,7 +1162,7 @@ a.name {
   border: none;
   margin: 0;
   padding: 0;
-  transform: translateY(-10%);
+  transform: translateY(-8%);
   width: 110%;
   height: 100%;
 }

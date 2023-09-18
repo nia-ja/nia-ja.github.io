@@ -1,7 +1,8 @@
 // todo: do not center pictures vertically
 .card {
-    perspective: 150rem;
     -moz-perspective: 150rem;
+    -webkit-perspective: 150rem;
+    perspective: 150rem;
     width: 49%;
     // height: 48%; // for 2 rows
     height: 32%; // for 3 rows
@@ -14,10 +15,21 @@
       left: 0;
       width: 100%;
       -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
       backface-visibility: hidden;
-      transform-style:preserve-3d;
+      transform-style: preserve-3d;
+      // -webkit-transform: translate3d(0,0,0);
+      // transform: translate3d(0,0,0);
       display: flex;
       flex-direction: column;
+      
+      // iframe, video {
+      //   -webkit-backface-visibility: hidden;
+      //   -moz-backface-visibility: hidden;
+      //   backface-visibility: hidden;
+      // }
+
+
   
       h2 {
         color: $color-primary-bright-orange;
@@ -235,17 +247,20 @@
       &-front {
         height: 100%;
         background-color: $color-light;
+        z-index: 100;
       }
   
       &-back {
         height: 100%;
         background-color: $color-light;
-        transform: rotateY(180deg);
+        transform: rotateY(180deg) translateZ(1px);
 
-        iframe {
+        iframe, video {
           -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
           backface-visibility: hidden;
         }
+
       }
 
       // for particular cards
