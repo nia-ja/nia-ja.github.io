@@ -52,6 +52,33 @@ a.name {
   color: transparent;
 }
 
+.fixed-up {
+  position: fixed;
+  width: 100%;
+  max-width: 1600px;
+  padding: 1.5rem;
+  background-color: transparent;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+.fixed-up a.circle {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #EC9006;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fixed-up a.circle:hover {
+  transform: translate(-50%, -50%) scale(1.6);
+}
+
 /* 1024 */
 @media (max-width: 1024px) {
   h1 {
@@ -73,6 +100,12 @@ a.name {
     line-height: 2.5rem;
     font-size: 2rem;
   }
+  .fixed-up {
+    justify-content: flex-start;
+  }
+  .fixed-up a.circle:hover {
+    transform: translate(50%, -50%) scale(1.6);
+  }
 }
 /* 640 */
 @media (max-width: 640px) {
@@ -84,6 +117,9 @@ a.name {
   h2 {
     line-height: 2rem;
     font-size: 1.5rem;
+  }
+  .fixed-up {
+    display: none;
   }
 }
 /* 565 */
@@ -420,7 +456,7 @@ a.name {
   height: 57%;
 }
 .card_side-6.card_side-front .card_side-main .front-info .media {
-  height: 79%;
+  height: 100%;
 }
 .card_side-6.card_side-back .card_side-main .front-info .media {
   max-width: 60%;
@@ -1177,7 +1213,7 @@ a.name {
 }
 .section-contact-main .presentation-wrapper {
   width: 48%;
-  height: 150%;
+  height: 153%;
   background-color: rgba(255, 119, 48, 0.9);
   z-index: 10;
   transform: translate(6%, -2.3%);
@@ -1212,25 +1248,28 @@ a.name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
+  align-items: flex-start;
 }
 .section-contact-footer .btn-mobile {
   display: none;
 }
 .section-contact-footer .footer-contacts-wrapper {
-  width: 70%;
+  width: 60%;
   height: 97%;
   color: #482e2e;
   font-size: 1.4rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-bottom: 3%;
+  padding-top: 5%;
 }
 .section-contact-footer .footer-contacts-wrapper h2 {
   color: #fff;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
+}
+.section-contact-footer .footer-contacts-email {
+  margin-bottom: 3%;
 }
 .section-contact-footer .footer-contacts-phone, .section-contact-footer .footer-contacts-email {
   display: flex;
@@ -1271,14 +1310,15 @@ a.name {
   margin-bottom: 3%;
 }
 .section-contact-footer .footer-icons-wrapper {
-  width: 25%;
-  height: 90%;
+  width: 35%;
+  height: 97%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 7%;
+  margin-bottom: 3%;
+  padding-top: 5%;
 }
 .section-contact-footer .footer-icons-wrapper a {
   text-decoration: none;
@@ -1288,31 +1328,6 @@ a.name {
 .section-contact-footer .footer-icons-wrapper a:hover {
   color: rgba(255, 255, 255, 0.8);
   transform: scale(1.2);
-}
-.section-contact-footer a.circle {
-  display: block;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  background-color: #fff;
-  color: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 20%;
-  right: 1%;
-}
-.section-contact-footer a.circle i {
-  margin-bottom: 5%;
-}
-.section-contact-footer a.circle .arrow-text {
-  color: #EC9006;
-}
-.section-contact-footer a.circle:hover {
-  transform: translate(-50%, -50%) scale(2);
-  z-index: 100;
 }
 
 /* Media queries */
@@ -1382,6 +1397,7 @@ a.name {
     height: 60%;
     justify-content: flex-start;
     margin-bottom: 0;
+    padding-top: 0;
   }
   .section-contact-footer .footer-contacts-wrapper h2 {
     margin-bottom: 5%;
@@ -1399,16 +1415,12 @@ a.name {
   }
   .section-contact-footer .footer-icons-wrapper {
     width: 50%;
-    height: 95%;
+    height: 60%;
     margin-bottom: 0;
+    padding-top: 0;
     justify-content: flex-end;
+    align-items: flex-end;
     gap: 5%;
-  }
-  .section-contact-footer a.circle {
-    width: 7rem;
-    height: 7rem;
-    bottom: 5%;
-    left: 3%;
   }
 }
 @media (max-width: 640px) {
@@ -1461,9 +1473,6 @@ a.name {
   }
   .section-contact-footer .footer-icons-wrapper a {
     font-size: 4rem;
-  }
-  .section-contact-footer a.circle {
-    display: none;
   }
 }
 @media (max-width: 475px) {

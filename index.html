@@ -64,6 +64,13 @@
             </nav>
         </div>
 
+        <div class="fixed-up">
+            <a class="circle" href="#">
+                <i class="fa-solid fa-arrow-up fa-2x" style="color: #EC9006;"></i>
+                <p class="arrow-text">TOP</p>
+            </a>
+        </div>
+
         <!-- section home -->
         <section id="home" class="section-home">
             <aside class="home-social">
@@ -133,7 +140,14 @@
                         <div class="card_side-main">
                             <div class="front-info">
                                 <div class="media">
-                                    <img src="./img/liftquest-threePhones.png" alt="">
+                                    <picture>
+                                        <source media="(max-width: 475px)" srcset="./img/LiftQuest_project/liftquest_262px.png" />
+                                        <source media="(max-width: 640px)" srcset="./img/LiftQuest_project/liftquest_335px" />
+                                        <source media="(max-width: 768px)" srcset="./img/LiftQuest_project/liftquest_410px.png" />
+                                        <source media="(max-width: 1024px)" srcset="./img/LiftQuest_project/liftquest_262px.png" />
+                                        <img src="./img/LiftQuest_project/liftquest_410px.png" alt="LiftQuest project mobile version preview" />
+                                    </picture>
+                                    
                                 </div>
                                 <p class="project-text">A workout tracker app that is responsive across multiple platforms. I was part of 8 person remote team, that worked on this app over an 8 week period.
 
@@ -165,7 +179,7 @@
                             <div class="front-info">
                                 <div class="media">
                                     <video controls muted autoplay loop>
-                                        <source src="/img/LiftQuestApp_Demo.mp4" type="video/mp4">
+                                        <source src="/img/LiftQuest_project/LiftQuestApp_Demo.mp4" type="video/mp4">
                                         <p>
                                             Your browser doesn't support HTML video. Here is a
                                             <a href="https://youtu.be/vJZ-9K0LHdI?si=XYsr_j_7mgDseDJF">link to the video</a> instead.
@@ -467,7 +481,7 @@
                                     <img src="./img/S&J_main.png" alt="">
                                 </div>
                                 <p class="project-text">
-                                    A dynamic web page crafted with HTML, CSS, and LESS, enriched with real-time Twitter data integration via the Twitter API. This project embodies the fusion of design and functionality, offering a visually appealing and information-rich user experience. This project excels in both design and functionality, with a strong emphasis on responsive design. It offers a flawless experience on both desktop and mobile devices, showcasing my skills in crafting user-friendly interfaces across platforms. Explore the synergy of web technologies and social media integration in this showcase of my coding skills.
+                                    A dynamic web page crafted with HTML, CSS, and LESS, enriched with real-time Twitter data integration via the Twitter API. This project is build with a strong emphasis on responsive design.
                                 </p>
                             </div>
 
@@ -499,7 +513,7 @@
                                     <img src="./img/S&J_demo.gif" alt="">
                                 </div>
                                 <p class="project-text">
-                                    A dynamic web page crafted with HTML, CSS, and LESS, enriched with real-time Twitter data integration via the Twitter API. This project embodies the fusion of design and functionality, offering a visually appealing and information-rich user experience. This project excels in both design and functionality, with a strong emphasis on responsive design. It offers a flawless experience on both desktop and mobile devices, showcasing my skills in crafting user-friendly interfaces across platforms. Explore the synergy of web technologies and social media integration in this showcase of my coding skills.
+                                    A dynamic web page crafted with HTML, CSS, and LESS, enriched with real-time Twitter data integration via the Twitter API. This project is build with a strong emphasis on responsive design.
                                 </p>
                             </div>
                             <div class="description">
@@ -614,7 +628,7 @@
                     </div>
 
                     <!-- <p class="presentation-big-text">Hi!</p> -->
-                    
+
                     <p class="presentation-text">
                         I'm a passionate and aspiring junior web developer on a mission to turn ideas into captivating online experiences.
                     </p>
@@ -647,8 +661,7 @@
             </div>
 
             <!-- footer -->
-            <footer class="section-contact-footer">
-                
+            <footer class="section-contact-footer">               
                 <div class="footer-contacts-wrapper">
                     <h2>Get in Touch</h2>
                     <div class="footer-contacts-email">
@@ -677,14 +690,7 @@
                     <a href="https://www.linkedin.com/in/kasia-bondarava-9a777718a/" target="_blank"><i class="devicon-linkedin-plain"></i>
                     </a>
                 </div>
-                
-                <a class="circle" href="#">
-                    <i class="fa-solid fa-arrow-up fa-2x" style="color: #EC9006;"></i>
-                    <p class="arrow-text">TOP</p>
-                </a>
-
             </footer>
-
         </section>
     </main>
 

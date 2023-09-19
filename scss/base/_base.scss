@@ -52,6 +52,36 @@ a.name {
   color: transparent;
 }
 
+.fixed-up {
+  position: fixed;
+  width: 100%;
+  max-width: 1600px;
+  padding: 1.5rem;
+  background-color: transparent;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+
+
+  a.circle {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: $color-light;
+    color: $color-primary-bright-orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        transform: translate(-50%, -50%) scale(1.6);
+    }
+}
+}
+
 // breakpoints for the project
 /* 1024 */
 @media (max-width: 1024px) {
@@ -75,6 +105,14 @@ a.name {
     line-height: 2.5rem;
     font-size: 2rem;
   }
+
+  .fixed-up {
+    justify-content: flex-start;
+
+    a.circle:hover {
+      transform: translate(50%, -50%) scale(1.6);
+    }
+  }
 }
 
 /* 640 */
@@ -87,6 +125,9 @@ a.name {
   h2 {
     line-height: 2rem;
     font-size: 1.5rem;
+  }
+  .fixed-up {
+    display: none;
   }
 }
 

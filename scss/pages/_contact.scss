@@ -60,7 +60,7 @@
         .presentation {
             &-wrapper {
                 width: 48%;
-                height: 150%;
+                height: 153%;
                 background-color: rgba(#ff7730,.9);
                 z-index: 10;
                 transform: translate(6%, -2.3%);
@@ -116,8 +116,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
-        position: relative;
+        align-items: flex-start;
 
         .btn-mobile {
             display: none;
@@ -125,20 +124,27 @@
         
         .footer-contacts {
             &-wrapper {
-                width: 70%;
+                width: 60%;
                 height: 97%;
                 color: $color-dark;
                 font-size: 1.4rem;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: flex-start;
                 margin-bottom: 3%;
+                padding-top: 5%;
                 
                 h2 {
                     color: $color-light;
-                    margin-bottom: 2%;
+                    margin-bottom: 4%;
                 }
+            
+                
 
+            }
+
+            &-email {
+                margin-bottom: 3%;
             }
             
             &-phone, &-email {
@@ -185,14 +191,17 @@
         }
 
         .footer-icons-wrapper {
-            width: 25%;
-            height: 90%;
+            width: 35%;
+            height: 97%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            align-items: flex-end;
+            align-items: flex-start;
+            // align-items: flex-end;
             flex-wrap: wrap;
-            margin-bottom: 7%;
+            // margin-top: 7%;
+            margin-bottom: 3%;
+            padding-top: 5%;
 
             a {
                 text-decoration: none;
@@ -206,34 +215,34 @@
             }
         }
 
-        a.circle {
-            display: block;
-            width: 5rem;
-            height: 5rem;
-            border-radius: 50%;
-            background-color: $color-light;
-            color: transparent;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            bottom: 20%;
-            right: 1%;
+        // a.circle {
+        //     display: block;
+        //     width: 5rem;
+        //     height: 5rem;
+        //     border-radius: 50%;
+        //     background-color: $color-light;
+        //     color: transparent;
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     justify-content: center;
+        //     position: absolute;
+        //     bottom: 20%;
+        //     right: 1%;
 
-            i {
-                margin-bottom: 5%;
-            }
+        //     i {
+        //         margin-bottom: 5%;
+        //     }
     
-            .arrow-text {
-                color: $color-primary-bright-orange;
-            }
+        //     .arrow-text {
+        //         color: $color-primary-bright-orange;
+        //     }
 
-            &:hover {
-                transform: translate(-50%, -50%) scale(2);
-                z-index: 100;
-            }
-        }
+        //     &:hover {
+        //         transform: translate(-50%, -50%) scale(2);
+        //         z-index: 100;
+        //     }
+        // }
     }
 }
 
@@ -345,6 +354,7 @@
                 height: 60%;
                 justify-content: flex-start;
                 margin-bottom: 0;
+                padding-top: 0;
 
                 h2 {
                     margin-bottom: 5%;
@@ -366,20 +376,23 @@
 
             .footer-icons-wrapper {
                 width: 50%;
-                height: 95%;
+                height: 60%;
                 margin-bottom: 0;
+                padding-top: 0;
                 justify-content: flex-end;
+                align-items: flex-end;
                 // align-items: flex-start;
                 // padding-top: 17%;
                 gap: 5%;
             }
 
-            a.circle {
-                width: 7rem;
-                height: 7rem;
-                bottom: 5%;
-                left: 3%;
-            }
+            // a.circle {
+            //     display: none;
+            //     width: 7rem;
+            //     height: 7rem;
+            //     bottom: 5%;
+            //     left: 3%;
+            // }
 
         }
     }
@@ -478,9 +491,9 @@
                 }
             }
 
-            a.circle {
-                display: none;
-            }
+            // a.circle {
+            //     display: none;
+            // }
         }
     }
 }

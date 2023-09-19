@@ -5,16 +5,23 @@ document.cookie = `myCookie=${randomValueHex}`;
 
 document.cookie = `myCookie=${randomValueHex}; SameSite=None; Secure`;
 
-// Navigation - active tabs
+// Navigation - active tabs && to the top button behavior
 const sections = document.querySelectorAll("section");
 const navAnchors = document.querySelectorAll("nav .navbar-menu ul.navbar_list li.navbar_item a.navbar_link");
+const fixedUp = document.querySelector(".fixed-up");
 window.onscroll = () => {
-  var current = "";
+  let current = "";
+  let current_middle = "";
+  let vh = window.innerHeight;
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
+      current = section.getAttribute("id");
+    }
+    if (pageYOffset >= sectionTop - (vh/3*2)) {
+        current_middle = section.getAttribute("id");
+    }
   });
 
   navAnchors.forEach((a) => {
@@ -23,6 +30,12 @@ window.onscroll = () => {
       a.classList.add("active");
     }
   });
+
+  if (current_middle === "home") {
+    fixedUp.style.display = "none";
+  } else {
+    fixedUp.style.display = "flex";
+  }
 };
 
 
