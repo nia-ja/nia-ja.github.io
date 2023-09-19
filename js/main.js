@@ -33,6 +33,8 @@ window.onscroll = () => {
 
   if (current_middle === "home") {
     fixedUp.style.display = "none";
+  } else if (window.innerWidth <= 640) {
+    fixedUp.style.display = "none";
   } else {
     fixedUp.style.display = "flex";
   }

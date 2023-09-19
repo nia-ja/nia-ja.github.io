@@ -127,7 +127,7 @@ a.name {
     font-size: 1.5rem;
   }
   .fixed-up {
-    display: none;
+    display: none !important;
   }
 }
 
