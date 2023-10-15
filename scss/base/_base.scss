@@ -6,6 +6,10 @@
   box-sizing: inherit;
 }
 
+::selection {
+  background: $color-primary-light-orange;
+}
+
 html {
   font-size: 10px;
   background-color: black;

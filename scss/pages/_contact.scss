@@ -59,6 +59,10 @@
 
         .presentation {
             &-wrapper {
+                ::selection {
+                    color: $color-dark;
+                }
+
                 width: 48%;
                 height: 153%;
                 background-color: rgba(#ff7730,.9);

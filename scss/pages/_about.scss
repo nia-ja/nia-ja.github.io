@@ -1,5 +1,6 @@
 .section-home {
     height: 100vh;
+    min-height: 600px;
     position: relative;
 
     .home-social {
@@ -225,6 +226,7 @@
 
 @media (max-width: 768px) {
     .section-home {
+        min-height: 500px;
         .home-social {
             display: none;
         }

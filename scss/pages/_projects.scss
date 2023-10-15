@@ -1,8 +1,15 @@
 .section-projects {
     // height: 100vh; // for 2 rows
-    height: 150vh; // for 3 rows
+    // min-height: calc(106rem + 50rem);
+    // height: 150vh; // for 3 rows
     background-color: rgba($color-primary-bright-orange, .7);
     position: relative;
+    padding-bottom: 3rem;
+
+    ::selection {
+        background: $color-primary-bright-orange;
+        color: $color-light;
+    }
 
     #middle-of-project-page-anchor {
         position: absolute;
@@ -121,7 +128,9 @@
         // for 6 cards
         // height: 295vh;
         // for 5 cards
-        height: 248vh;
+        // height: 248vh;
+        // height: 180rem;
+        // min-height: 180rem;
 
         // aside.scroll-content {
         //     display: none;
@@ -141,6 +150,8 @@
 
 @media (max-width: 565px) {}
 
-@media (max-width: 485px) {}
+@media (max-width: 485px) {
+
+}
 
 @media (orientation: portrait) and (max-width: 640px) {}
