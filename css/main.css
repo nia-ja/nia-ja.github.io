@@ -524,7 +524,7 @@ a.name {
   }
 }
 .skill {
-  width: 75%;
+  width: 95%;
   height: 30%;
   margin: 0 auto 5rem auto;
   background-color: rgba(255, 255, 255, 0.2);
@@ -556,16 +556,15 @@ a.name {
   align-content: center;
   list-style-type: none;
   transform: skewX(12deg);
-  border: 1px solid yellow;
 }
 .skill-list-item {
-  margin-left: 2rem;
+  margin-left: 2%;
   padding: 0.3rem;
   margin-bottom: 1%;
-  width: calc(33% - 4rem);
+  width: 30%;
   font-family: "Roboto Mono", monospace;
   color: #482e2e;
-  font-size: 2.2rem;
+  font-size: 2rem;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -575,7 +574,7 @@ a.name {
   color: inherit;
 }
 .skill-list-item img.icon {
-  height: 2.2rem;
+  height: 2rem;
   margin-right: 0.5rem;
   color: inherit;
   filter: invert(16%) sepia(5%) saturate(3700%) hue-rotate(314deg) brightness(101%) contrast(89%);
@@ -631,15 +630,7 @@ a.name {
 }
 
 /* Media queries*/
-@media (max-width: 1024px) {
-  .skill-list-item {
-    font-size: 2rem;
-  }
-  .skill-list-item img.icon {
-    height: 2rem;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .skill-list-item {
     font-size: 1.8rem;
   }
@@ -647,12 +638,20 @@ a.name {
     height: 1.8rem;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .skill-list-item {
     font-size: 1.6rem;
   }
   .skill-list-item img.icon {
     height: 1.6rem;
+  }
+}
+@media (max-width: 640px) {
+  .skill-list-item {
+    font-size: 1.4rem;
+  }
+  .skill-list-item img.icon {
+    height: 1.4rem;
   }
 }
 @media (max-width: 565px) {
@@ -666,14 +665,14 @@ a.name {
 /* 475 */
 @media (max-width: 475px) {
   .skill-list-item {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .skill-list-item img.icon {
-    height: 1.1rem;
+    height: 1rem;
   }
 }
 /* 375 */
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .skill-list-item {
     font-size: 0.8rem;
   }
