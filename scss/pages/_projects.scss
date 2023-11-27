@@ -4,12 +4,12 @@
     // height: 150vh; // for 3 rows
     background-color: rgba($color-primary-bright-orange, .7);
     position: relative;
-    padding-bottom: 3rem;
+    height: 100%;
 
-    ::selection {
-        background: $color-primary-bright-orange;
-        color: $color-light;
-    }
+    // ::selection {
+    //     background: $color-primary-bright-orange;
+    //     color: $color-light;
+    // }
 
     #middle-of-project-page-anchor {
         position: absolute;
@@ -78,9 +78,10 @@
 
     &-wrapper {
         margin: 7% auto 0 auto;
+        padding-bottom: calc(7% - 2rem);
         width: 83%;
         // height: 75%; // for 2 rows
-        height: 85%; // for 3 rows
+        height: 100%; // for 3 rows
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;

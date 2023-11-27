@@ -216,18 +216,75 @@ a.name {
   text-transform: none;
 }
 
+.test-card {
+  width: 49%;
+  min-height: 32rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.test-card .project-name {
+  width: 100%;
+  border: 1px solid gray;
+}
+.test-card .project-name h2 {
+  color: #EC9006;
+  text-transform: uppercase;
+  border: 1px solid red;
+}
+.test-card .main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  border: 1px solid teal;
+}
+.test-card .main .front-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid orange;
+}
+.test-card .main .front-info .media {
+  max-width: 57%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.test-card .main .front-info .media img, .test-card .main .front-info .media video, .test-card .main .front-info .media picture, .test-card .main .front-info .media picture > img {
+  max-width: 100%;
+  object-fit: scale-down;
+  max-height: 100%;
+}
+.test-card .main .front-info .project-text {
+  width: 40%;
+  height: auto;
+}
+.test-card .main .description {
+  height: 100%;
+}
+
 .card {
   -moz-perspective: 150rem;
   -webkit-perspective: 150rem;
   perspective: 150rem;
   width: 49%;
-  height: 32%;
-  min-height: 32rem;
+  min-height: 35rem;
+  margin-bottom: 2rem;
 }
 .card_side {
   width: 100%;
   height: 100%;
-  min-height: 32rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -262,8 +319,6 @@ a.name {
 .card_side-main .front-info {
   width: 100%;
   height: 80%;
-  overflow: hidden;
-  overflow-y: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -279,12 +334,14 @@ a.name {
 }
 .card_side-main .front-info .media img, .card_side-main .front-info .media video, .card_side-main .front-info .media picture, .card_side-main .front-info .media picture > img {
   max-width: 100%;
+  height: 100%;
   object-fit: scale-down;
   max-height: 100%;
 }
 .card_side-main .front-info .project-text {
   width: 40%;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   background-color: #e8d8be;
   padding: 2%;
   font-family: "Roboto Mono", monospace;
@@ -447,13 +504,6 @@ a.name {
   height: 100%;
   background-color: #fff;
   transform: rotateY(180deg) translateZ(1px);
-}
-.card_side-1.card_side-front .card_side-main .front-info .media {
-  /* 
-    default values: 
-      max-width: 70%;
-      height: 60%;
-  */
 }
 .card:hover .card_side-front {
   transform: rotateY(-180deg);
@@ -1249,16 +1299,12 @@ a.name {
 }
 .section-contact-main .presentation-wrapper {
   width: 48%;
-  height: 153%;
+  min-height: 153%;
+  height: auto;
   background-color: rgba(255, 119, 48, 0.9);
   z-index: 10;
   transform: translate(6%, -2.3%);
   padding: 4%;
-  overflow: hidden;
-  overflow-y: auto;
-}
-.section-contact-main .presentation-wrapper ::selection {
-  color: #482e2e;
 }
 .section-contact-main .presentation-wrapper .presentation-img-wrapper {
   margin: 0 auto;
@@ -1559,11 +1605,7 @@ a.name {
 .section-projects {
   background-color: rgba(236, 144, 6, 0.7);
   position: relative;
-  padding-bottom: 3rem;
-}
-.section-projects ::selection {
-  background: #EC9006;
-  color: #fff;
+  height: 100%;
 }
 .section-projects #middle-of-project-page-anchor {
   position: absolute;
@@ -1622,8 +1664,9 @@ a.name {
 }
 .section-projects-wrapper {
   margin: 7% auto 0 auto;
+  padding-bottom: calc(7% - 2rem);
   width: 83%;
-  height: 85%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

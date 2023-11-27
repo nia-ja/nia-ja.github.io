@@ -1,17 +1,93 @@
 // todo: do not center pictures vertically
+.test-card {
+  width: 49%;
+  min-height: 32rem;
+  background-color: $color-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+
+  .project-name {
+    // height: 100%;
+    width: 100%;
+    // padding:2%;
+    border: 1px solid gray;
+
+    h2 {
+      color: $color-primary-bright-orange;
+      text-transform: uppercase;
+      // line-height: 5.5rem;
+      // font-size: 5rem;
+      border: 1px solid red;
+
+    }
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    border: 1px solid teal;
+
+    .front-info {
+        width: 100%;
+        height: 100%;
+        // overflow: hidden;
+        // overflow-y: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: 1px solid orange;
+
+
+        .media {
+          max-width: 57%;
+          height: 100%;
+          overflow: hidden;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+  
+          img, video, picture, picture > img {
+            max-width: 100%;
+            object-fit: scale-down;
+            max-height: 100%;
+            // border: 1px solid red;
+          }
+        }
+  
+        .project-text {
+          width: 40%;
+          height: auto;
+        }
+    }
+
+    .description {
+      height: 100%;
+    }
+  }
+
+}
+
 .card {
     -moz-perspective: 150rem;
     -webkit-perspective: 150rem;
     perspective: 150rem;
     width: 49%;
     // height: 48%; // for 2 rows
-    height: 32%; // for 3 rows
-    min-height: 32rem;
+    // height: 32%; // for 3 rows
+    min-height: 35rem;
+    margin-bottom: 2rem;
   
     &_side {
       width: 100%;
       height: 100%;
-      min-height: 32rem;
       position: absolute;
       top: 0;
       left: 0;
@@ -48,8 +124,6 @@
         .front-info {
           width: 100%;
           height: 80%;
-          overflow: hidden;
-          overflow-y: auto;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
@@ -58,7 +132,6 @@
           .media {
             width: 57%;
             height: 100%;
-            // background-color: $color-grey-light-2;
             overflow: hidden;
             display: flex;
             align-items: flex-start;
@@ -66,15 +139,16 @@
 
             img, video, picture, picture > img {
               max-width: 100%;
+              height: 100%;
               object-fit: scale-down;
               max-height: 100%;
-              // border: 1px solid red;
             }
           }
 
           .project-text {
             width: 40%;
-            height: 100%;
+            min-height: 100%;
+            height: auto;
             background-color: $color-primary-light-orange;
             padding: 2%;
             font-family: 'Roboto Mono', monospace;
@@ -243,84 +317,6 @@
         transform: rotateY(180deg) translateZ(1px); // translateZ for Safari
         // z-index: 100; // to hide backface in Safari
       }
-
-      // for particular cards
-      // project#1: LiftQuest
-      &-1 {
-        &.card_side-front {
-          .card_side-main .front-info .media {
-            /* 
-              default values: 
-                max-width: 70%;
-                height: 60%;
-            */
-            // height: 75%;
-          }
-        }
-        // &.card_side-back {}
-      }
-      // project#2: Lambda Times
-      &-2 {
-        .card_side-main .front-info .media {
-          // height: 90%;
-        }
-        // &.card_side-front {
-        //   .card_side-main .front-info .media {
-        //     // height: 80%;
-        //   }
-        // }
-        // &.card_side-back {}
-      }
-      // project#3: hidden
-      // &-3 {
-      //   &.card_side-front {}
-      //   &.card_side-back {}
-      // }
-
-      // project#4: Elephant Zoo
-      &-4 {
-        .card_side-main .front-info .media {
-          // height: 56%;
-          // max-width: 75%;
-        }
-        &.card_side-front {
-          .card_side-main .front-info .media {
-            // height: 54%;
-          }
-        }
-        // &.card_side-back {}
-      }
-
-      // project#5: Smurf List
-      &-5 {
-        .card_side-main .front-info .media {
-          // max-width: 75%;
-          // height: 57%;
-        }
-        // &.card_side-front {}
-        // &.card_side-back {}
-      }
-
-      // project#6: S&J
-      &-6 {
-        &.card_side-front {
-          .card_side-main .front-info .media {
-            // height: 100%;
-          }
-        }
-        &.card_side-back {
-          .card_side-main .front-info .media {
-            // max-width: 60%;
-            // height: 58%;
-          }
-        }
-      }
-
-      &-2, &-6.card_side-front {
-          .description {
-            // transform: translateY(-10%);
-          }
-      }
     }
 
     &:hover &_side-front {
@@ -395,7 +391,7 @@
   }
 }
 
-@media (max-width: 640px) {}
+// @media (max-width: 640px) {}
 
 
 // @media (max-width: 485px) {
@@ -439,4 +435,4 @@
   }
 }
 
-@media (orientation: portrait) and (max-width: 640px) {}
+// @media (orientation: portrait) and (max-width: 640px) {}
