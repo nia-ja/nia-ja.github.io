@@ -1484,6 +1484,7 @@ a.name {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  z-index: 1000;
 }
 @media (max-width: 840px) {
   .section-contact-footer {

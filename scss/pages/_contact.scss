@@ -242,6 +242,7 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
+        z-index: 1000; // for modile Safari
         // border: 1px solid red;
 
         @media (max-width: 840px) {
