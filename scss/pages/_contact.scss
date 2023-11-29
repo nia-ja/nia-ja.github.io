@@ -262,6 +262,10 @@
         .btn-mobile {
             display: none;
 
+            &::after {
+                display: none;
+            }
+
             @media (max-width: 565px) {
                 display: block;
                 width: 40%;

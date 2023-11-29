@@ -14,13 +14,13 @@ html {
   font-size: 10px;
   background-color: black;
   background-color: #482e2e;
-  overflow-x: hidden;
 }
 
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   color: #482e2e;
+  max-width: 100vw;
   margin: 0 auto;
   height: auto;
 }
@@ -1008,6 +1008,12 @@ a.name {
   height: 100vh;
   min-height: 600px;
   position: relative;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .section-home {
+    min-height: 500px;
+  }
 }
 .section-home .home-social {
   position: absolute;
@@ -1015,6 +1021,11 @@ a.name {
   right: 0;
   height: 32rem;
   width: 10rem;
+}
+@media (max-width: 768px) {
+  .section-home .home-social {
+    display: none;
+  }
 }
 .section-home .home-social-wrapper {
   width: 10rem;
@@ -1164,9 +1175,6 @@ a.name {
 @media (max-width: 768px) {
   .section-home {
     min-height: 500px;
-  }
-  .section-home .home-social {
-    display: none;
   }
   .section-home-main {
     height: 50%;
@@ -1456,6 +1464,9 @@ a.name {
   }
 }
 .section-contact-footer .btn-mobile {
+  display: none;
+}
+.section-contact-footer .btn-mobile::after {
   display: none;
 }
 @media (max-width: 565px) {

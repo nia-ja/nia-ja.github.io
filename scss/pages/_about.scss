@@ -2,6 +2,12 @@
     height: 100vh;
     min-height: 600px;
     position: relative;
+    overflow-x: hidden;
+
+    @media (max-width: 768px) {
+        min-height: 500px;
+    }
+
 
     .home-social {
         position: absolute;
@@ -9,6 +15,10 @@
         right: 0;
         height: 32rem;
         width: 10rem;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
 
         &-wrapper {
             width: 10rem;
@@ -222,14 +232,10 @@
 }
 
 // Media queries
-@media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
     .section-home {
         min-height: 500px;
-        .home-social {
-            display: none;
-        }
 
         &-main {
             height: 50%;
