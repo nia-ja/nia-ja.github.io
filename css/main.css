@@ -854,7 +854,7 @@ a.name {
   width: 7rem;
   position: fixed;
   top: 2%;
-  right: 2%;
+  right: 5%;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -867,7 +867,7 @@ a.name {
   border-radius: 50%;
   position: fixed;
   top: 2.5%;
-  right: 2.5%;
+  right: 5.5%;
   background-image: radial-gradient(#e8d8be, #EC9006);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
