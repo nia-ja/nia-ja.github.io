@@ -13,14 +13,16 @@
 html {
   font-size: 10px;
   background-color: black;
+  background-color: $color-dark;
+  overflow-x: hidden;
 }
 
 body {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  background-color: $color-dark;
   color: $color-dark;
   margin: 0 auto;
+  height: auto;
 }
 
 main {

@@ -1,7 +1,10 @@
 <svg width="741" height="742" viewBox="0 0 741 742" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="10" y="10" width="721" height="443" rx="20" stroke="black" stroke-width="20"/>
-<line x1="13" y1="355" x2="741" y2="355" stroke="black" stroke-width="20"/>
-<path d="M76 66H669C674.523 66 679 70.4772 679 76V355H66V76C66 70.4772 70.4772 66 76 66Z" stroke="black" stroke-width="20"/>
+<rect x="15" y="15" width="711" height="433" rx="15" stroke="black" stroke-width="30"/>
+<line x1="13" y1="350" x2="741" y2="350" stroke="black" stroke-width="30"/>
+<mask id="path-3-inside-1_2313_32" fill="white">
+<path d="M56 76C56 64.9543 64.9543 56 76 56H669C680.046 56 689 64.9543 689 76V365H56V76Z"/>
+</mask>
+<path d="M56 76C56 64.9543 64.9543 56 76 56H669C680.046 56 689 64.9543 689 76V365H56V76Z" stroke="black" stroke-width="60" mask="url(#path-3-inside-1_2313_32)"/>
 <rect x="327" y="391" width="100" height="30" rx="15" fill="black"/>
 <rect x="332" y="463" width="89" height="72" fill="black"/>
 <path d="M106 582C106 556.043 127.043 535 153 535H605C630.957 535 652 556.043 652 582V582H106V582Z" fill="black"/>
