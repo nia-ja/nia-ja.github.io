@@ -1,5 +1,8 @@
 .section-skills {
-    height: 100vh;
+    min-height: calc(100vh + 14px);
+    height: auto;
+    height: 100%;
+    padding: 8% 0;
     background-color: rgba($color-primary-bright-orange, .2);
     position: relative;
 
@@ -8,19 +11,16 @@
     }
 
     &-wrapper {
-        margin: 8% auto 0 auto;
+        margin: 0 auto;
         width: 83%;
-        height: 70%;
+        min-height: calc(100vh - 10rem);
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-    }
-}
+        justify-content: center;
+        // border: 1px solid red;
 
-@media (max-width: 640px) {
-    .section-skills {
-        &-wrapper {
-            margin-top: 25%;
+        @media (max-width: 640px) {
             width: 90%;
         }
     }

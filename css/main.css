@@ -576,12 +576,12 @@ a.name {
   }
 }
 .skill {
-  width: 95%;
-  height: 30%;
+  width: 90%;
+  min-height: 100%;
   margin: 0 auto 5rem auto;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 3px;
-  padding: 1rem 0;
+  padding: 10% 0;
   font-size: 1.6rem;
   transform: skewX(-12deg);
   display: flex;
@@ -590,36 +590,55 @@ a.name {
   align-items: center;
 }
 .skill h2 {
-  width: 20%;
+  max-width: 20%;
   margin-left: 5%;
   margin-right: 0;
   transform: skewX(12deg);
   text-align: left;
+  font-size: 3rem;
+  line-height: 3rem;
   color: #EC9006;
 }
+@media (max-width: 640px) {
+  .skill h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
 .skill-list {
-  width: 74%;
-  height: 100%;
+  min-width: 74%;
+  min-height: 100%;
   margin: 1% 5% 1% 1%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
+  row-gap: 1rem;
+  column-gap: 3%;
   list-style-type: none;
   transform: skewX(12deg);
 }
 .skill-list-item {
-  margin-left: 2%;
-  padding: 0.3rem;
-  margin-bottom: 1%;
-  width: 30%;
+  padding: 0.5rem;
+  min-width: 30%;
+  width: auto;
   font-family: "Roboto Mono", monospace;
   color: #482e2e;
   font-size: 2rem;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
+}
+@media (max-width: 640px) {
+  .skill-list-item {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 400px) {
+  .skill-list-item {
+    font-size: 1.4rem;
+  }
 }
 .skill-list-item i {
   margin-right: 0.5rem;
@@ -630,6 +649,16 @@ a.name {
   margin-right: 0.5rem;
   color: inherit;
   filter: invert(16%) sepia(5%) saturate(3700%) hue-rotate(314deg) brightness(101%) contrast(89%);
+}
+@media (max-width: 640px) {
+  .skill-list-item img.icon {
+    height: 1.6rem;
+  }
+}
+@media (max-width: 400px) {
+  .skill-list-item img.icon {
+    height: 1.4rem;
+  }
 }
 .skill-list-item:nth-child(even) {
   color: #333;
@@ -648,13 +677,12 @@ a.name {
 .skill:nth-child(2) h2 {
   margin-right: 5%;
   margin-left: 0;
+  width: auto;
   transform: skewX(-12deg);
   text-align: right;
 }
 .skill:nth-child(2) .skill-list {
   transform: skewX(-12deg);
-  margin-right: 1%;
-  margin-left: 5%;
 }
 .skill:hover {
   background-color: rgba(236, 144, 6, 0.4);
@@ -668,57 +696,7 @@ a.name {
 .skill:last-child {
   margin-bottom: 0;
 }
-/* Media queries*/
-@media (max-width: 930px) {
-  .skill-list-item {
-    font-size: 1.8rem;
-  }
-  .skill-list-item img.icon {
-    height: 1.8rem;
-  }
-}
-@media (max-width: 768px) {
-  .skill-list-item {
-    font-size: 1.6rem;
-  }
-  .skill-list-item img.icon {
-    height: 1.6rem;
-  }
-}
-@media (max-width: 640px) {
-  .skill-list-item {
-    font-size: 1.4rem;
-  }
-  .skill-list-item img.icon {
-    height: 1.4rem;
-  }
-}
-@media (max-width: 565px) {
-  .skill-list-item {
-    font-size: 1.2rem;
-  }
-  .skill-list-item img.icon {
-    height: 1.2rem;
-  }
-}
-/* 475 */
-@media (max-width: 475px) {
-  .skill-list-item {
-    font-size: 1rem;
-  }
-  .skill-list-item img.icon {
-    height: 1rem;
-  }
-}
-/* 375 */
-@media (max-width: 400px) {
-  .skill-list-item {
-    font-size: 0.8rem;
-  }
-  .skill-list-item img.icon {
-    height: 0.8rem;
-  }
-}
+
 /* Navigation desktop */
 .navbar {
   width: 100%;
@@ -1872,7 +1850,10 @@ a.name {
   }
 }
 .section-skills {
-  height: 100vh;
+  min-height: calc(100vh + 14px);
+  height: auto;
+  height: 100%;
+  padding: 8% 0;
   background-color: rgba(236, 144, 6, 0.2);
   position: relative;
 }
@@ -1880,17 +1861,16 @@ a.name {
   color: transparent;
 }
 .section-skills-wrapper {
-  margin: 8% auto 0 auto;
+  margin: 0 auto;
   width: 83%;
-  height: 70%;
+  min-height: calc(100vh - 10rem);
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
-
 @media (max-width: 640px) {
   .section-skills-wrapper {
-    margin-top: 25%;
     width: 90%;
   }
 }
