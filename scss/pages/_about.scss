@@ -1,13 +1,20 @@
 .section-home {
     height: 100vh;
-    min-height: 600px;
+    min-height: 70rem;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
 
     @media (max-width: 768px) {
-        min-height: 500px;
+        height: 100vh;
+        min-height: 80rem;
+        margin: 0;
+        padding: 0;
     }
 
+    @media (max-width: 375px) {
+        min-height: 50rem;
+    }
 
     .home-social {
         position: absolute;
@@ -88,24 +95,46 @@
         height: 100%;
         width: 83%;
         margin: 0 auto;
-        padding: 10% 0 4% 0;
-
+        padding: 7% 0 4% 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
+        // border: 1px solid red;
+
+        @media (max-width: 768px) {
+            height: 100vh;
+            padding: 0;
+        }
+
+        @media (max-width: 485px) {
+            justify-content: space-evenly;
+            padding: 8% 0 10% 0;
+        }
     }
 
     &-heading {
         z-index: 11;
         text-transform: uppercase;
-        height: 20%;
+        max-height: 20rem;
+        height: auto;
+        // border: 1px solid orange;
+        
+        @media (max-width: 375px) {
+            max-height: 15rem;
+        }
     }
 
     // middle section
     &-main {
         width: 100%;
-        height: 40%;
+        max-height: 30rem;
+        height: auto;
         font-size: 1.6rem;
+        // border: 1px solid teal;
+
+        @media (max-width: 375px) {
+            max-height: 20rem;
+        }
     }
 
     &_photo {
@@ -115,6 +144,10 @@
         shape-outside: polygon(0 0, 100% 0, 100% 90%, 0 90%);
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
         position: relative;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
 
         img {
             width: 100%;
@@ -167,31 +200,64 @@
     // Bottom section
     &-bottom {
         width: 100%;
-        margin-top: -5%;
-        height: 20%;
+        margin-top: -5rem;
+        max-height: 20rem;
+        height: auto;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: flex-end;
+        // border: 1px solid green;
 
-        .arrow-big {
-            display: block;
+        @media (max-width: 768px) {
+            max-height: 15rem;
         }
 
-        .arrow-small {
-            display: none;
+        @media (max-width: 485px) {
+            flex-wrap: wrap;
         }
 
+        .arrow {
+            @media (max-width: 485px) {
+                order: 2;
+            }
+
+            .arrow-big {
+                display: block;
+
+                @media (max-width: 640px) {
+                    display: none;
+                }
+            }
+    
+            .arrow-small {
+                display: none;
+
+                @media (max-width: 640px) {
+                    display: block;
+                }
+            }
+        }
 
         .based-in {
             text-align: left;
             text-transform: uppercase;
+
+            @media (max-width: 485px) {
+                order: 1;
+                width: 100%;
+                margin-bottom: 2%;
+            }
         }
 
         .name {
             text-align: right;
             // text-transform: uppercase;
             // font-size: 5rem;
+
+            @media (max-width: 485px) {
+                order: 3;
+            }
         }
     }
 }
@@ -230,77 +296,3 @@
         transform: translateX(-2rem);
     }
 }
-
-// Media queries
-
-@media (max-width: 768px) {
-    .section-home {
-        min-height: 500px;
-
-        &-main {
-            height: 50%;
-        }
-
-        &_photo {
-            width: 100%;
-        } 
-    }
-
-}
-
-@media (max-width: 640px) {
-    .section-home {
-        &-bottom {
-            .arrow-big {
-                display: none;
-            }
-        
-            .arrow-small {
-                display: block;
-            }
-        }
-    }
-}
-
-@media (max-width: 565px) {}
-
-@media (max-width: 485px) {
-    .section-home {
-        &-wrapper {
-            justify-content: space-evenly;
-            padding: 8% 0 10% 0;
-        }
-        &-heading {
-            height: 10%;
-        }
-        &-main {
-            height: 30%;
-        }
-        &-bottom {
-            height: 20%;
-            flex-wrap: wrap;
-            // align-items: flex-start;
-            // gap: 5%;
-
-            .arrow {
-                order: 2;
-                // margin-right: 5%;
-            }
-
-            .based-in {
-                order: 1;
-                width: 100%;
-                margin-bottom: 2%;
-                // margin-left: 5%;
-            }
-
-            .name {
-                order: 3;
-                // width: 100%;
-                // align-self: flex-end;
-            }
-        }
-    }
-}
-
-@media (orientation: portrait) and (max-width: 640px) {}
