@@ -1,15 +1,7 @@
 .section-projects {
-    // height: 100vh; // for 2 rows
-    // min-height: calc(106rem + 50rem);
-    // height: 150vh; // for 3 rows
     background-color: rgba($color-primary-bright-orange, .7);
     position: relative;
     height: 100%;
-
-    // ::selection {
-    //     background: $color-primary-bright-orange;
-    //     color: $color-light;
-    // }
 
     #middle-of-project-page-anchor {
         position: absolute;
@@ -20,7 +12,6 @@
     }
 
     aside.scroll-content {
-        // float: right;
         width: 6%;
         background-color: rgba($color-grey-dark, .05);
         margin: 2rem 0 2rem 1%;
@@ -34,11 +25,15 @@
         justify-content: center;
         align-items: center;
 
+        @media (max-width: 1024px) {
+            display: none;
+            visibility: hidden;
+        }
+
         p.scroll-text {
             font-family: 'M PLUS 1p', sans-serif;
             font-size: 1.5rem;
             letter-spacing: 1px;
-            // font-weight: 400;
             text-transform: uppercase;
             color: $color-light;
             text-align: center;
@@ -48,7 +43,6 @@
         img.scroll-img {
             max-width: 100%;
             margin: 0 1% 1.5rem 0;
-            // transform: rotate(180deg);
             animation-name: stretch;
             animation-duration: 1.5s; 
             animation-timing-function: ease-out; 
@@ -80,27 +74,26 @@
         margin: 7% auto 0 auto;
         padding-bottom: calc(7% - 2rem);
         width: 83%;
-        // height: 75%; // for 2 rows
-        height: 100%; // for 3 rows
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: space-between;
-        // border: 1px solid red;
-    }
 
-    // a.name {
-    //     color: transparent;
-    // }
+        @media (max-width: 768px) {
+            max-height: 100%;
+            margin: 5vh auto 0 auto;
+            justify-content: center;
+            align-content: flex-start;
+        }
+    }
 }
 
 @keyframes stretch {
     0% {
-        // transform: scale(.3);
         transform: translateY(0);
     }
     100% {
-        // transform: scale(1.5);
         transform: translateY(1.5rem);
     }
 }
@@ -113,46 +106,3 @@
         transform: rotate(180deg) translateY(0);
     }
 }
-
-// Media queries
-@media (max-width: 1024px) {
-    .section-projects {
-        aside.scroll-content {
-        display: none;
-        visibility: hidden;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .section-projects {
-        // for 6 cards
-        // height: 295vh;
-        // for 5 cards
-        // height: 248vh;
-        // height: 180rem;
-        // min-height: 180rem;
-
-        // aside.scroll-content {
-        //     display: none;
-        //     visibility: hidden;
-        // }
-
-        &-wrapper {
-            max-height: 100%;
-            margin: 5vh auto 0 auto;
-            justify-content: center;
-            align-content: flex-start;
-        }
-    }
-}
-
-@media (max-width: 640px) {}
-
-@media (max-width: 565px) {}
-
-@media (max-width: 485px) {
-
-}
-
-@media (orientation: portrait) and (max-width: 640px) {}
