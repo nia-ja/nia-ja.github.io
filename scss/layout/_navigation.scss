@@ -107,7 +107,6 @@
         
         }
     }
-    // , &_logo_link
     &_link {
             display: flex;
             flex-direction: column;
@@ -328,12 +327,6 @@
 }
 
 // Media queries
-@media (max-width: 1024px) {
-    // .navbar {
-    //     max-width: 1024px;
-    // }
-}
-
 @media (max-width: 768px) {
     .navbar {
         display: none;
@@ -345,19 +338,11 @@
 
 }
 
-@media (max-width: 640px) {
-
-}
-
-@media (max-width: 565px) {}
-
 @media (max-width: 485px) {
   .navigation {
       &__button {
           height: 5rem;
           width: 5rem;
-          // top: 2%;
-          // right: 2%;
       }
   
       &__background {
@@ -384,8 +369,6 @@
     &__button {
         height: 4rem;
         width: 4rem;
-        // top: 2%;
-        // right: 2%;
     }
 
     &__background {
@@ -405,8 +388,4 @@
         }
     }
 }
-}
-
-@media (orientation: portrait) and (max-width: 640px) {
-
 }

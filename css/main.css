@@ -309,7 +309,6 @@ a.name {
   overflow: hidden;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   justify-content: flex-start;
 }
 @media (max-width: 1024px) {
@@ -329,6 +328,7 @@ a.name {
     max-height: 48%;
     height: auto;
     margin: 0 auto;
+    justify-content: center;
   }
 }
 .card_side-main .front-info .media img, .card_side-main .front-info .media video, .card_side-main .front-info .media picture, .card_side-main .front-info .media picture > img {
