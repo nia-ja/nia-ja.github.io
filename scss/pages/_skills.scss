@@ -1,8 +1,7 @@
 .section-skills {
-    min-height: calc(100vh + 14px);
+    min-height: 100%;
     height: auto;
-    height: 100%;
-    padding: 8% 0;
+    padding: 7% 0;
     background-color: rgba($color-primary-bright-orange, .2);
     position: relative;
 
@@ -12,16 +11,10 @@
 
     &-wrapper {
         margin: 0 auto;
-        width: 83%;
-        min-height: calc(100vh - 10rem);
-        height: 100%;
+        width: 90%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // border: 1px solid red;
-
-        @media (max-width: 640px) {
-            width: 90%;
-        }
     }
 }

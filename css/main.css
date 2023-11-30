@@ -556,11 +556,11 @@ a.name {
 
 .skill {
   width: 90%;
-  min-height: 100%;
-  margin: 0 auto 5rem auto;
+  height: auto;
+  margin: 0 auto 2rem auto;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 3px;
-  padding: 10% 0;
+  padding: 2% 0;
   font-size: 1.6rem;
   transform: skewX(-12deg);
   display: flex;
@@ -662,6 +662,9 @@ a.name {
 }
 .skill:nth-child(2) .skill-list {
   transform: skewX(-12deg);
+}
+.skill:nth-child(2) .skill-list-item {
+  justify-content: flex-end;
 }
 .skill:hover {
   background-color: rgba(236, 144, 6, 0.4);
@@ -1797,10 +1800,9 @@ a.name {
   }
 }
 .section-skills {
-  min-height: calc(100vh + 14px);
+  min-height: 100%;
   height: auto;
-  height: 100%;
-  padding: 8% 0;
+  padding: 7% 0;
   background-color: rgba(236, 144, 6, 0.2);
   position: relative;
 }
@@ -1809,17 +1811,11 @@ a.name {
 }
 .section-skills-wrapper {
   margin: 0 auto;
-  width: 83%;
-  min-height: calc(100vh - 10rem);
-  height: 100%;
+  width: 90%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-@media (max-width: 640px) {
-  .section-skills-wrapper {
-    width: 90%;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,10 +1,10 @@
 .skill {
     width: 90%;
-    min-height: 100%;
-    margin: 0 auto 5rem auto;
+    height: auto;
+    margin: 0 auto 2rem auto;
     background-color: rgba($color-light, .2);
     border-radius: 3px;
-    padding: 10% 0;
+    padding: 2% 0;
     font-size: $default-font-size;
     transform: skewX(-12deg);
     display: flex;
@@ -112,12 +112,14 @@
             width: auto;
             transform: skewX(-12deg);
             text-align: right;
-            // border: 1px dotted green;
         }
 
         .skill-list {
             transform: skewX(-12deg);
-            // border: 1px dotted green;
+        }
+
+        .skill-list-item {
+            justify-content: flex-end;
         }
     }
 
