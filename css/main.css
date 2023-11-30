@@ -62,11 +62,13 @@ a.name {
 
 .fixed-up {
   position: fixed;
-  width: 100%;
-  max-width: 1600px;
+  width: auto;
+  min-height: 5rem;
+  height: auto;
   padding: 1.5rem;
   background-color: transparent;
   bottom: 0;
+  right: 0;
   display: flex;
   justify-content: flex-end;
   z-index: 1000000;
@@ -110,6 +112,7 @@ a.name {
   }
   .fixed-up {
     justify-content: flex-start;
+    left: 0;
   }
   .fixed-up a.circle:hover {
     transform: translate(50%, -50%) scale(1.6);
