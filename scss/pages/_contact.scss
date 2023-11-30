@@ -229,7 +229,7 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
-        z-index: 1000; // for mobile Safari
+        z-index: 100; // for mobile Safari
 
         @media (max-width: 840px) {
             padding: 5%;
